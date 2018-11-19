@@ -3,16 +3,36 @@
 *Setup a honeypot and intercept some attacks in the wild using Modern Honey Network (MHN)*
 
 ## Time Spent
-*8 hours*
+*12 hours*
 
 ## Report
+
+### Introduction - Resources and Tools
+
+The OS I used to build all this was through [Ubuntu 16.04 Xenial](http://releases.ubuntu.com/16.04/).
+We will be building an Admin VM and Honeypot VMs using the Modern Honey Network and Google Cloud Platform (GCP).
+The first thing to do is to create a free account on [GCP's Free Tier](https://cloud.google.com/free/).
+The VMs will be running Ubuntu 14.04 Trusty.
+
+#### Honeypots to use
+
+The honeypot VMs are easily deployable, and will be shown below on how exactly to deploy/use them. We will be using the following:
+ - Ubuntu - Dionaea with HTTP - [Dionaea Documentation](https://dionaea.readthedocs.io/en/latest/)
+ - Ubuntu - Snort - [Snort Documentation](https://www.snort.org/documents)
+ - Ubuntu - p0f - [p0f Documentation](http://lcamtuf.coredump.cx/p0f3/)
+ - Ubuntu - Glastopf - [Installation](https://github.com/mushorg/glastopf/blob/master/docs/source/installation/installation_ubuntu.rst) and [Glastopf Documentation](https://glastopf.readthedocs.io/en/latest/)
+ - Ubuntu - Suricata - [Suricata Documentation](https://suricata-ids.org/)
+ - Ubuntu - Conpot - [Conpot Documentation](http://conpot.org/) and [Conpot GitHub](https://github.com/mushorg/conpot)
+ - Ubuntu - Kippo as vulnerable Juniper Netscreen - [Kippo GitHub](https://github.com/desaster/kippo)
+
 ### Create and Install MHN Admin Application
 
 Details:
 - Create the MHN Admin VM on Google Cloud Platform
-- SSH into the MNH Admin VM, update it, install git, and clone MHN Repo
+- SSH into the MNH Admin VM, update it, install git, and clone the [Modern Honey Network (MHN)](https://github.com/RedolentSun/mhn.git) from RedolentSun.
 - Edit **scripts/install_hpfeeds.sh** file within repo
   - Instead of using HurricaneLabs, use [couozu](https://github.com/couozu/pyev.git#egg=pyev) repo
+  - From ```pip install -e git+https://github.com/HurricaneLabs/pyev.git#egg=pyev``` to: ```pip install -e git+https://github.com/couozu/pyev.git#egg=pyev```
 - Run install scripts
 
 Demonstration:
