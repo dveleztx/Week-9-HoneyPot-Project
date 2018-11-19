@@ -3,7 +3,7 @@
 *Setup a honeypot and intercept some attacks in the wild using Modern Honey Network (MHN)*
 
 ## Time Spent
-*6 hours
+*8 hours*
 
 ## Report
 ### Create and Install MHN Admin Application
@@ -29,3 +29,24 @@ Issues:
   
 ##### Create Firewall Rule on Google Cloud Platform
 <img src="https://github.com/dveleztx/Week-9-HoneyPot-Project/blob/master/imgs/firewall_rules_revised.gif" width="800">
+
+
+### Create and Install Dionaea
+
+Details:
+- Create the Dionaea Honeypot on Google Cloud Platform
+- SSH into the Dionaea Honeypot and deploy script
+- Verify on MHN Admin Console
+
+Demonstration:
+<img src="https://github.com/dveleztx/Week-9-HoneyPot-Project/blob/master/imgs/create_install_dionaea.gif" width="800">
+
+#### Look at Attacks and Payloads on Dionaea Honeypot
+
+Demonstration:
+<img src="https://github.com/dveleztx/Week-9-HoneyPot-Project/blob/master/imgs/dionaea_attack_report_with_payloads.gif" width="800">
+
+Issues:
+- Payloads were not registered on the MHN Admin Console
+  - Decided to look on the backend and look at sql logs and came up with some good data and captures
+  - SQLITE file was easy readable using SQLITE3
