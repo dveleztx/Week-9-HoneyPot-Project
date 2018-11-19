@@ -1,2 +1,0 @@
-stream = [('in', b'GET / HTTP/1.1\x0d\x0aHost: 35.226.222.200:80\x0d\x0aUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/601.7.7 (KHTML, like Gecko) Version/9.1.2 Safari/601.7.7\x0d\x0aContent-Length: 0\x0d\x0aVia: HTTP/1.1 NetScaler0003346042011589815323, HTTP/1.1 NetScaler0003346042011589815326\x0d\x0aCache-Control: max-stale=0\x0d\x0aConnection: Keep-Alive\x0d\x0a\x0d\x0a'),
-('out', b'HTTP/1.0 200 OK\x0d\x0aConnection: close\x0d\x0aContent-Length: 38\x0d\x0a\x0d\x0a<html>TODO: PUT YOUR HTML HERE</html>\x0a')]
