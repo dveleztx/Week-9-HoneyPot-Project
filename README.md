@@ -101,7 +101,7 @@ Demonstration:
 Issues:
 - Payloads were not registered on the MHN Admin Console
   - Decided to look on the backend and look at sql logs and came up with some good data and captures
-  - SQLITE file was easy readable using SQLITE3
+  - SQLITE file was easy readable using SQLITE3, more logs attached in the Summary below
 
 ### Analyze Attack and Payloads on SNORT Honeypot
 
@@ -123,8 +123,16 @@ Demonstration:
 Demonstration:
 <img src="https://github.com/dveleztx/Week-9-HoneyPot-Project/blob/master/imgs/kippo_attack_report_with_payloads.gif" width="800">
 
+### Charts of Kippo/Cowrie Top Users/Passwords and Attackers
 
-### Demonstrations of Attack in Progress (on Dionaea) with Interaction HoneyMap
+#### Top Attackers
+<img src="https://github.com/dveleztx/Week-9-HoneyPot-Project/blob/master/kippo-cowrie-charts/Kippo_Cowrie%20Top%20Attackers.png" width="800">
+
+#### Top User/Passwords
+<img src="https://github.com/dveleztx/Week-9-HoneyPot-Project/blob/master/kippo-cowrie-charts/Kippo_Cowrie%20Top%20User_Passwords.png" width="800">
+
+
+### Demonstrations of Attacks in Progress (on Dionaea) with Interaction HoneyMap
 
 #### Demo 1:
 
@@ -150,11 +158,3 @@ Demonstration:
 **NOTE:** Each specific log is listed above in the chart under "Attacks" per honeypot.
 
 In my findings, I pulled out logs from each VM to get a better idea what specific transactions were taken place per honeypot. A more broader summary of data collected from the honeypots are listed here: [session.json](https://github.com/dveleztx/Week-9-HoneyPot-Project/blob/master/mhn-admin/session.json).
-
-### Charts of Kippo/Cowrie Top Users/Passwords and Attackers
-
-#### Top Attackers
-<img src="https://github.com/dveleztx/Week-9-HoneyPot-Project/blob/master/kippo-cowrie-charts/Kippo_Cowrie%20Top%20Attackers.png" width="800">
-
-#### Top User/Passwords
-<img src="https://github.com/dveleztx/Week-9-HoneyPot-Project/blob/master/kippo-cowrie-charts/Kippo_Cowrie%20Top%20User_Passwords.png" width="800">
