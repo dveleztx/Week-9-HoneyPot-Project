@@ -1,0 +1,2 @@
+stream = [('in', b'GET / HTTP/1.0\x0d\x0aHOST: 1.2.3.4\x0d\x0a\x0d\x0a'),
+('out', b'HTTP/1.0 200 OK\x0d\x0aConnection: close\x0d\x0aContent-Length: 38\x0d\x0a\x0d\x0a<html>TODO: PUT YOUR HTML HERE</html>\x0a')]
