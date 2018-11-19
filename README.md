@@ -83,8 +83,10 @@ Demonstration:
 
 ### Demonstrations of Attack in Progress (on Dionaea) with Interaction HoneyMap
 
-Demo 1:
+#### Demo 1:
+
 <img src="https://github.com/dveleztx/Week-9-HoneyPot-Project/blob/master/imgs/attack%20in%20progress.gif" width="800">
 
-Demo 2 (using NMAP):
+#### Demo 2 (using NMAP):
+
 <img src="https://github.com/dveleztx/Week-9-HoneyPot-Project/blob/master/imgs/my_attack.gif" width="800">
