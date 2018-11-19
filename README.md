@@ -52,10 +52,25 @@ Demonstration:
 ##### Installation of MHN Application
 <img src="https://github.com/dveleztx/Week-9-HoneyPot-Project/blob/master/imgs/install_mhn_app_revised.gif" width="800">
 
+Steps:
+- Conduct an update on the OS
+  - ```sudo apt-get update```
+- Download git
+  - ```sudo apt-get install git -y```
+- cd into /opt/ and clone MHN repo
+  - ```cd /opt/; sudo git clone https://github.com/RedolentSun/mhn.git```
+- Edit scripts/install_hpfeeds.sh within repo
+  - From ```pip install -e git+https://github.com/HurricaneLabs/pyev.git#egg=pyev``` to: ```pip install -e git+https://github.com/couozu/pyev.git#egg=pyev```
+- Install using script
+  - ```sudo ./install.sh```
+- Make sure to verify supervisorctl status, that all services are running, per the following:
+  - <img src="https://github.com/dveleztx/Week-9-HoneyPot-Project/blob/master/imgs/supervisorctl_status.png" width="600">
+
 Issues:
 - Admin console did not come up, suspected firewall issues
   - To fix, create a firewall rule to open http as demonstrated next
   - Once rule is complete, make sure MHN VM has port 80 open (UFW/iptables)
+  - ```sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT```
   
 ##### Create Firewall Rule on Google Cloud Platform
 <img src="https://github.com/dveleztx/Week-9-HoneyPot-Project/blob/master/imgs/firewall_rules_revised.gif" width="800">
@@ -85,10 +100,8 @@ Demonstration:
 Steps:
 - First, create firewall rule to allow incomign traffic on all ports
   - ```gcloud beta compute firewall-rules create mhn-allow-honeypot --direction=INGRESS --priority=1000 --network=default --action=ALLOW --rules=all --source-ranges=0.0.0.0/0 --target-tags=mhn-honeypot```
-- Next, create teh VM for the honeypot, we'll call it *mhn-honeypot-1*
+- Next, create the VM for the honeypot, we'll call it *mhn-honeypot-1*
   - ```gcloud compute instances create "mhn-honeypot-1" --machine-type "f1-micro" --subnet "default" --maintenance-policy "MIGRATE"  --scopes "https://www.googleapis.com/auth/devstorage.read_only","https://www.googleapis.com/auth/logging.write","https://www.googleapis.com/auth/monitoring.write","https://www.googleapis.com/auth/servicecontrol","https://www.googleapis.com/auth/service.management.readonly","https://www.googleapis.com/auth/trace.append" --tags "mhn-honeypot","http-server" --image "ubuntu-1404-trusty-v20171010" --image-project "ubuntu-os-cloud" --boot-disk-size "10" --boot-disk-type "pd-standard" --boot-disk-device-name "mhn-honeypot-1"```
-- Make sure to verify supervisorctl status, that all services are running, per the following:
-  - <img src="https://github.com/dveleztx/Week-9-HoneyPot-Project/blob/master/imgs/supervisorctl_status.png" width="600">
 - On the **admin console**, go to the *Deploy* tab and select "Ubuntu - Dionaea with HTTP"
   - Use the script to on the Honeypot VM to deploy it and it'll add to the list of sensors on the admin console (shown above on the gif) 
 
