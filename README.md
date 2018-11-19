@@ -213,6 +213,14 @@ Demonstration:
 
 <img src="https://github.com/dveleztx/Week-9-HoneyPot-Project/blob/master/imgs/my_attack.gif" width="800">
 
+### Capturing Logs
+After doing analysis and an assessment on the honeypot VMs, pulling a log for the purposes of reviewing and reporting is relatively simple
+- Log into the Admin VM
+- Run the following command to generate a json file of all activities per each Honeypot VM
+  - ```mongoexport --db mnemosyne --collection session > session.json```
+- Retrieve the file from your personal PC using the following command
+  - ```gcloud compute scp mhn-admin:~/session.json ./session.json```
+- **NOTE**: The above command "gcloud compute scp" is useful to getting into the Honeypot VMs in case you need to retrieve files specifically from them
 
 ## Summary of Attacks
 
