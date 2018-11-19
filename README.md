@@ -3,16 +3,36 @@
 *Setup a honeypot and intercept some attacks in the wild using Modern Honey Network (MHN)*
 
 ## Time Spent
-*8 hours*
+*12 hours*
 
 ## Report
+
+### Introduction - Resources and Tools
+
+The OS I used to build all this was through [Ubuntu 16.04 Xenial](http://releases.ubuntu.com/16.04/).
+We will be building an Admin VM and Honeypot VMs using the Modern Honey Network and Google Cloud Platform (GCP).
+The first thing to do is to create a free account on [GCP's Free Tier](https://cloud.google.com/free/).
+The VMs will be running Ubuntu 14.04 Trusty.
+
+#### Honeypots to use
+
+The honeypot VMs are easily deployable, and will be shown below on how exactly to deploy/use them. We will be using the following:
+ - Ubuntu - Dionaea with HTTP - [Dionaea Documentation](https://dionaea.readthedocs.io/en/latest/)
+ - Ubuntu - Snort - [Snort Documentation](https://www.snort.org/documents)
+ - Ubuntu - p0f - [p0f Documentation](http://lcamtuf.coredump.cx/p0f3/)
+ - Ubuntu - Glastopf - [Installation](https://github.com/mushorg/glastopf/blob/master/docs/source/installation/installation_ubuntu.rst) and [Glastopf Documentation](https://glastopf.readthedocs.io/en/latest/)
+ - Ubuntu - Suricata - [Suricata Documentation](https://suricata-ids.org/)
+ - Ubuntu - Conpot - [Conpot Documentation](http://conpot.org/) and [Conpot GitHub](https://github.com/mushorg/conpot)
+ - Ubuntu - Kippo as vulnerable Juniper Netscreen - [Kippo GitHub](https://github.com/desaster/kippo)
+
 ### Create and Install MHN Admin Application
 
 Details:
 - Create the MHN Admin VM on Google Cloud Platform
-- SSH into the MNH Admin VM, update it, install git, and clone MHN Repo
+- SSH into the MNH Admin VM, update it, install git, and clone the [Modern Honey Network (MHN)](https://github.com/RedolentSun/mhn.git) from RedolentSun.
 - Edit **scripts/install_hpfeeds.sh** file within repo
   - Instead of using HurricaneLabs, use [couozu](https://github.com/couozu/pyev.git#egg=pyev) repo
+  - From ```pip install -e git+https://github.com/HurricaneLabs/pyev.git#egg=pyev``` to: ```pip install -e git+https://github.com/couozu/pyev.git#egg=pyev```
 - Run install scripts
 
 Demonstration:
@@ -90,3 +110,24 @@ Demonstration:
 #### Demo 2 (using NMAP):
 
 <img src="https://github.com/dveleztx/Week-9-HoneyPot-Project/blob/master/imgs/my_attack.gif" width="800">
+
+
+## Summary of Attacks
+
+| Number | Hostname | IP | Honeypot | UUID | Attacks |
+| --- | --- | --- | --- | --- | --- |
+| 1 | mhn-honeypot-1 | 35.226.222.200 | dionaea | 4a3e4a5e-ea40-11e8-9599-42010a800002 | [10517](https://github.com/dveleztx/Week-9-HoneyPot-Project/tree/master/dionaea_logs) |
+| 2 | mhn-honeypot-2 | 35.202.198.20 | snort | 	cd43e14c-ea4b-11e8-9599-42010a800002 | [2134](https://github.com/dveleztx/Week-9-HoneyPot-Project/tree/master/snort_logs) |
+| 3 | mhn-honeypot-3 | 35.192.2.246 | p0f | 9784f9b8-eb92-11e8-9599-42010a800002 | [961](https://github.com/dveleztx/Week-9-HoneyPot-Project/tree/master/p0f_logs) |
+| 4 | mhn-honeypot-4 | 35.225.72.209 | glastopf | 5286be14-ea52-11e8-9599-42010a800002 | [0 (reported)](https://github.com/dveleztx/Week-9-HoneyPot-Project/tree/master/glastopf_logs) |
+| 5 | mhn-honeypot-5 | 35.184.249.204 | suricata | 4c91dbd6-ea54-11e8-9599-42010a800002 | [7193](https://github.com/dveleztx/Week-9-HoneyPot-Project/tree/master/suricata_logs) | 
+| 6 | mhn-honeypot-6 | 35.238.38.58 | conpot | 903087dc-ea97-11e8-9599-42010a800002 | [300+](https://github.com/dveleztx/Week-9-HoneyPot-Project/blob/master/conpot_logs/auth.log) |
+| 7 | mhn-honeypot-7 | 35.238.9.117 | kippo | e0ddd6ee-ea56-11e8-9599-42010a800002 | 301 |
+
+### Charts of Kippo/Cowrie Top Users/Passwords and Attackers
+
+#### Top Attackers
+<img src="https://github.com/dveleztx/Week-9-HoneyPot-Project/blob/master/kippo-cowrie-charts/Kippo_Cowrie%20Top%20Attackers.png" width="800">
+
+#### Top User/Passwords
+<img src="https://github.com/dveleztx/Week-9-HoneyPot-Project/blob/master/kippo-cowrie-charts/Kippo_Cowrie%20Top%20User_Passwords.png" width="800">
