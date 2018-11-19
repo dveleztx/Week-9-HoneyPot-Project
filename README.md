@@ -168,6 +168,16 @@ Demonstration:
 | 6 | mhn-honeypot-6 | 35.238.38.58 | conpot | 903087dc-ea97-11e8-9599-42010a800002 | [300+](https://github.com/dveleztx/Week-9-HoneyPot-Project/blob/master/conpot_logs/auth.log) |
 | 7 | mhn-honeypot-7 | 35.238.9.117 | kippo | e0ddd6ee-ea56-11e8-9599-42010a800002 | 301 |
 
-**NOTE:** Each specific log is listed above in the chart under "Attacks" per honeypot.
+**TOTAL ATTACKS COMMITTED**: 21,406+
 
+**NOTE:** 
+- Each specific log is listed above in the chart under "Attacks" per honeypot. 
+- Also, the glastopf VM didn't seem to be completely working, although it did have a page standing, which does log if any attempts are made against it, [this](https://github.com/dveleztx/Week-9-HoneyPot-Project/blob/master/imgs/2018-11-19%2002_57_40-admin.php.png) was the front page.
+- It should be known that payloads had to be dug up for the Dionaea machine, as I had noted above. The logs for dionaea will show the payloads logged into a sqlite
+- It should also be known that conpot has 0 on my attack chart on my MHN Admin Console, but looking at the auth.log in /var/log on the VM determined that there were numerous hits of attackers trying to get in. The charts above also support this claim.
+- I lost access to kippo within hours, I was not able to pull any logs from the VM itself, but the admin console did capture traffic going through ssh (port 22), the charts also support this claim.
+
+### Conclusion
 In my findings, I pulled out logs from each VM to get a better idea what specific transactions were taken place per honeypot. A more broader summary of data collected from the honeypots are listed here: [session.json](https://github.com/dveleztx/Week-9-HoneyPot-Project/blob/master/mhn-admin/session.json).
+
+Standing up these honeypots indicate one thing, that the cyber world of exploitation and attacking is very real and alive. My data was collected for the course of 3 days, and the amount of attacks were staggering. With over **20,000** attacks, with close to **7,000** attacks committed per day, it's hard not to phathom a world without strong security practices. These honeypots prove that the existence of vulnerabilities whether having real threat surfaces or not, in our case in honeypot snares, that nobody is absolutely safe. This is why cyber security must be taken seriously in every field, in every industry, and coming up with solutions based off data collected in instances like this help us understand our enemies better.
