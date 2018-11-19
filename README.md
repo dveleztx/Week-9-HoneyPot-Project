@@ -34,6 +34,7 @@ The VMs will be running Ubuntu 14.04 Trusty.
   - ```gcloud config set compute/zone us-central1-c```
 - Verify GCloud config with the following command:
   - ```gcloud config list```
+- Full documentation [here](https://cloud.google.com/sdk/install)
 
 ### Create and Install MHN Admin Application
 
@@ -110,6 +111,63 @@ Steps:
 
 Demonstration:
 <img src="https://github.com/dveleztx/Week-9-HoneyPot-Project/blob/master/imgs/dionaea_attack_report_with_payloads.gif" width="800">
+
+Secondary Attack using [Sn1per](https://github.com/1N3/Sn1per)
+- The report from the recon scan is [here](https://github.com/dveleztx/Week-9-HoneyPot-Project/blob/master/imgs/dionaea-sniper-report.txt)
+- A brief summary of the report above:
+```
+Starting Nmap 7.70 ( https://nmap.org ) at 2018-11-19 03:55 CST
+Nmap scan report for 200.222.226.35.bc.googleusercontent.com (35.226.222.200)
+Host is up (1.2s latency).
+Not shown: 258 closed ports, 204 filtered ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT      STATE SERVICE
+21/tcp    open  ftp
+22/tcp    open  ssh
+23/tcp    open  telnet
+42/tcp    open  nameserver
+53/tcp    open  domain
+80/tcp    open  http
+135/tcp   open  msrpc
+443/tcp   open  https
+1433/tcp  open  ms-sql-s
+1723/tcp  open  pptp
+3306/tcp  open  mysql
+5060/tcp  open  sip
+11211/tcp open  memcache
+27017/tcp open  mongod
+[+] URL's Discovered: 
+/usr/share/blackwidow/35.226.222.200_80/35.226.222.200_80-urls-sorted.txt
+__________________________________________________________________________________________________
+
+[+] Dynamic URL's Discovered: 
+/usr/share/blackwidow/35.226.222.200_80/35.226.222.200_80-dynamic-sorted.txt
+__________________________________________________________________________________________________
+
+[+] Form URL's Discovered: 
+/usr/share/blackwidow/35.226.222.200_80/35.226.222.200_80-forms-sorted.txt
+__________________________________________________________________________________________________
+
+[+] Unique Dynamic Parameters Discovered: 
+/usr/share/blackwidow/35.226.222.200_80/35.226.222.200_80-dynamic-unique.txt
+__________________________________________________________________________________________________
+
+[+] Sub-domains Discovered: 
+/usr/share/blackwidow/35.226.222.200_80/35.226.222.200_80-subdomains-sorted.txt
+__________________________________________________________________________________________________
+
+[+] Emails Discovered: 
+/usr/share/blackwidow/35.226.222.200_80/35.226.222.200_80-emails-sorted.txt
+__________________________________________________________________________________________________
+
+[+] Phones Discovered: 
+/usr/share/blackwidow/35.226.222.200_80/35.226.222.200_80-phones-sorted.txt
+__________________________________________________________________________________________________
+
+[+] Loot Saved To: 
+/usr/share/blackwidow/35.226.222.200_80/
+```
+- The gif of the attack is [here](https://github.com/dveleztx/Week-9-HoneyPot-Project/blob/master/imgs/sniper_attack_dionaea_honeypot.gif)
 
 Issues:
 - Payloads were not registered on the MHN Admin Console
