@@ -3,7 +3,7 @@
 *Setup a honeypot and intercept some attacks in the wild using Modern Honey Network (MHN)*
 
 ## Time Spent
-*12 hours*
+*15 hours*
 
 ## Report
 
@@ -114,6 +114,7 @@ Demonstration:
 
 Secondary Attack using [Sn1per](https://github.com/1N3/Sn1per)
 - The report from the recon scan is [here](https://github.com/dveleztx/Week-9-HoneyPot-Project/blob/master/imgs/dionaea-sniper-report.txt)
+- The gif of the attack is [here](https://github.com/dveleztx/Week-9-HoneyPot-Project/blob/master/imgs/sniper_attack_dionaea_honeypot.gif)
 - A brief summary of the report above:
 ```
 Starting Nmap 7.70 ( https://nmap.org ) at 2018-11-19 03:55 CST
@@ -167,7 +168,6 @@ ________________________________________________________________________________
 [+] Loot Saved To: 
 /usr/share/blackwidow/35.226.222.200_80/
 ```
-- The gif of the attack is [here](https://github.com/dveleztx/Week-9-HoneyPot-Project/blob/master/imgs/sniper_attack_dionaea_honeypot.gif)
 
 Issues:
 - Payloads were not registered on the MHN Admin Console
