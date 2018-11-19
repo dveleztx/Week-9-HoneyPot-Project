@@ -232,7 +232,7 @@ Demonstration:
 - Each specific log is listed above in the chart under "Attacks" per honeypot. 
 - Also, the glastopf VM didn't seem to be completely working, although it did have a page standing, which does log if any attempts are made against it, [this](https://github.com/dveleztx/Week-9-HoneyPot-Project/blob/master/imgs/glastopf-%20admin.php.png) was the front page.
 - It should be known that payloads had to be dug up for the Dionaea machine, as I had noted above. The logs for dionaea will show the payloads logged into a sqlite
-- It should also be known that conpot has 0 on my attack chart on my MHN Admin Console, but looking at the auth.log in /var/log on the VM determined that there were numerous hits of attackers trying to get in. The charts above also support this claim.
+- It should also be known that conpot has 0 on my attack chart on my MHN Admin Console, but looking at the auth.log in /var/log on the VM determined that there were numerous hits of attackers trying to get in *and succeeding*. The charts above also support this claim.
 - I lost access to kippo within hours, I was not able to pull any logs from the VM itself, but the admin console did capture traffic going through ssh (port 22), the charts also support this claim.
 
 ### Conclusion
