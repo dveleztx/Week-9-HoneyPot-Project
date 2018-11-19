@@ -170,8 +170,6 @@ Demonstration:
 
 <img src="https://github.com/dveleztx/Week-9-HoneyPot-Project/blob/master/imgs/Attack%20Stats.png" width="800">
 
-**TOTAL ATTACKS COMMITTED**: 21,406+
-
 **NOTE:** 
 - Each specific log is listed above in the chart under "Attacks" per honeypot. 
 - Also, the glastopf VM didn't seem to be completely working, although it did have a page standing, which does log if any attempts are made against it, [this](https://github.com/dveleztx/Week-9-HoneyPot-Project/blob/master/imgs/glastopf-%20admin.php.png) was the front page.
@@ -182,4 +180,4 @@ Demonstration:
 ### Conclusion
 In my findings, I pulled out logs from each VM to get a better idea what specific transactions were taken place per honeypot. A more broader summary of data collected from the honeypots are listed here: [session.json](https://github.com/dveleztx/Week-9-HoneyPot-Project/blob/master/mhn-admin/session.json).
 
-Standing up these honeypots indicate one thing, that the cyber world of exploitation and attacking is very real and alive. My data was collected for the course of 3 days, and the amount of attacks were staggering. With over **20,000** attacks, with close to **7,000** attacks committed per day, it's hard not to phathom a world without strong security practices. These honeypots prove that the existence of vulnerabilities whether having real threat surfaces or not, in our case in honeypot snares, that nobody is absolutely safe. This is why cyber security must be taken seriously in every field, in every industry, and coming up with solutions based off data collected in instances like this help us understand our enemies better.
+Standing up these honeypots indicate one thing, that the cyber world of exploitation and attacking is very real and alive. My data was collected for the course of 3 days, and the amount of attacks were staggering. With over **25,000** attacks, with close to **8,000** attacks committed per day, it's hard not to phathom a world without strong security practices. These honeypots prove that the existence of vulnerabilities whether having real threat surfaces or not, in our case in honeypot snares, that nobody is absolutely safe. This is why cyber security must be taken seriously in every field, in every industry, and coming up with solutions based off data collected in instances like this help us understand our enemies better.
