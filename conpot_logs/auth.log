@@ -1,0 +1,987 @@
+Nov 17 18:33:35 mhn-honeypot-6 groupadd[1306]: group added to /etc/group: name=google-sudoers, GID=1001
+Nov 17 18:33:35 mhn-honeypot-6 groupadd[1306]: group added to /etc/gshadow: name=google-sudoers
+Nov 17 18:33:35 mhn-honeypot-6 groupadd[1306]: new group: name=google-sudoers, GID=1001
+Nov 17 18:33:35 mhn-honeypot-6 useradd[1311]: new group: name=fury, GID=1002
+Nov 17 18:33:35 mhn-honeypot-6 useradd[1311]: new user: name=fury, UID=1001, GID=1002, home=/home/fury, shell=/bin/bash
+Nov 17 18:33:35 mhn-honeypot-6 usermod[1318]: add 'fury' to group 'adm'
+Nov 17 18:33:35 mhn-honeypot-6 usermod[1318]: add 'fury' to group 'dialout'
+Nov 17 18:33:35 mhn-honeypot-6 usermod[1318]: add 'fury' to group 'cdrom'
+Nov 17 18:33:35 mhn-honeypot-6 usermod[1318]: add 'fury' to group 'floppy'
+Nov 17 18:33:35 mhn-honeypot-6 usermod[1318]: add 'fury' to group 'audio'
+Nov 17 18:33:35 mhn-honeypot-6 usermod[1318]: add 'fury' to group 'dip'
+Nov 17 18:33:35 mhn-honeypot-6 usermod[1318]: add 'fury' to group 'video'
+Nov 17 18:33:35 mhn-honeypot-6 usermod[1318]: add 'fury' to group 'plugdev'
+Nov 17 18:33:35 mhn-honeypot-6 usermod[1318]: add 'fury' to group 'netdev'
+Nov 17 18:33:35 mhn-honeypot-6 usermod[1318]: add 'fury' to group 'ubuntu'
+Nov 17 18:33:35 mhn-honeypot-6 usermod[1318]: add 'fury' to group 'google-sudoers'
+Nov 17 18:33:35 mhn-honeypot-6 usermod[1318]: add 'fury' to shadow group 'adm'
+Nov 17 18:33:35 mhn-honeypot-6 usermod[1318]: add 'fury' to shadow group 'dialout'
+Nov 17 18:33:35 mhn-honeypot-6 usermod[1318]: add 'fury' to shadow group 'cdrom'
+Nov 17 18:33:35 mhn-honeypot-6 usermod[1318]: add 'fury' to shadow group 'floppy'
+Nov 17 18:33:35 mhn-honeypot-6 usermod[1318]: add 'fury' to shadow group 'audio'
+Nov 17 18:33:35 mhn-honeypot-6 usermod[1318]: add 'fury' to shadow group 'dip'
+Nov 17 18:33:35 mhn-honeypot-6 usermod[1318]: add 'fury' to shadow group 'video'
+Nov 17 18:33:35 mhn-honeypot-6 usermod[1318]: add 'fury' to shadow group 'plugdev'
+Nov 17 18:33:35 mhn-honeypot-6 usermod[1318]: add 'fury' to shadow group 'netdev'
+Nov 17 18:33:35 mhn-honeypot-6 usermod[1318]: add 'fury' to shadow group 'ubuntu'
+Nov 17 18:33:35 mhn-honeypot-6 usermod[1318]: add 'fury' to shadow group 'google-sudoers'
+Nov 17 18:33:38 mhn-honeypot-6 sshd[1512]: Server listening on 0.0.0.0 port 22.
+Nov 17 18:33:38 mhn-honeypot-6 sshd[1512]: Server listening on :: port 22.
+Nov 17 18:33:39 mhn-honeypot-6 sshguard[1571]: Started successfully [(a,p,s)=(40, 420, 1200)], now ready to scan.
+Nov 17 18:34:16 mhn-honeypot-6 sshd[1698]: Accepted publickey for fury from 24.155.24.53 port 50541 ssh2: RSA 6b:0b:3e:0c:81:dc:56:32:38:7d:fc:57:fc:4b:20:55
+Nov 17 18:34:16 mhn-honeypot-6 sshd[1698]: pam_unix(sshd:session): session opened for user fury by (uid=0)
+Nov 17 18:35:30 mhn-honeypot-6 sudo:     fury : TTY=pts/0 ; PWD=/home/fury ; USER=root ; COMMAND=/bin/bash deploy.sh http://35.239.51.200 DIvQc9a1
+Nov 17 18:35:30 mhn-honeypot-6 sudo: pam_unix(sudo:session): session opened for user root by fury(uid=0)
+Nov 17 18:35:30 mhn-honeypot-6 sudo:     root : TTY=pts/0 ; PWD=/home/fury ; USER=root ; COMMAND=/usr/bin/apt-get install -y curl python
+Nov 17 18:35:30 mhn-honeypot-6 sudo: pam_unix(sudo:session): session opened for user root by fury(uid=0)
+Nov 17 18:35:31 mhn-honeypot-6 sudo: pam_unix(sudo:session): session closed for user root
+Nov 17 18:35:31 mhn-honeypot-6 sudo:     root : TTY=pts/0 ; PWD=/home/fury ; USER=root ; COMMAND=/usr/bin/tee -a /etc/apt/sources.list
+Nov 17 18:35:31 mhn-honeypot-6 sudo: pam_unix(sudo:session): session opened for user root by fury(uid=0)
+Nov 17 18:35:31 mhn-honeypot-6 sudo: pam_unix(sudo:session): session closed for user root
+Nov 17 18:37:28 mhn-honeypot-6 sudo: pam_unix(sudo:session): session closed for user root
+Nov 17 18:47:47 mhn-honeypot-6 sshd[1777]: Received disconnect from 24.155.24.53: 11: disconnected by user
+Nov 17 18:47:47 mhn-honeypot-6 sshd[1698]: pam_unix(sshd:session): session closed for user fury
+Nov 17 19:17:01 mhn-honeypot-6 CRON[11524]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 17 19:17:01 mhn-honeypot-6 CRON[11524]: pam_unix(cron:session): session closed for user root
+Nov 17 20:03:22 mhn-honeypot-6 sshd[11579]: Invalid user test3 from 36.67.59.193
+Nov 17 20:03:22 mhn-honeypot-6 sshd[11579]: input_userauth_request: invalid user test3 [preauth]
+Nov 17 20:03:22 mhn-honeypot-6 sshd[11579]: Received disconnect from 36.67.59.193: 11: Normal Shutdown, Thank you for playing [preauth]
+Nov 17 20:16:19 mhn-honeypot-6 sshd[11590]: Invalid user ftpuser from 124.47.9.102
+Nov 17 20:16:19 mhn-honeypot-6 sshd[11590]: input_userauth_request: invalid user ftpuser [preauth]
+Nov 17 20:16:19 mhn-honeypot-6 sshd[11590]: Received disconnect from 124.47.9.102: 11: Normal Shutdown, Thank you for playing [preauth]
+Nov 17 20:17:01 mhn-honeypot-6 CRON[11593]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 17 20:17:01 mhn-honeypot-6 CRON[11593]: pam_unix(cron:session): session closed for user root
+Nov 17 20:18:32 mhn-honeypot-6 sshd[11607]: Invalid user ubnt from 167.99.90.137
+Nov 17 20:18:32 mhn-honeypot-6 sshd[11607]: input_userauth_request: invalid user ubnt [preauth]
+Nov 17 20:18:33 mhn-honeypot-6 sshd[11607]: Received disconnect from 167.99.90.137: 11: Bye Bye [preauth]
+Nov 17 20:18:33 mhn-honeypot-6 sshd[11609]: Invalid user admin from 167.99.90.137
+Nov 17 20:18:33 mhn-honeypot-6 sshd[11609]: input_userauth_request: invalid user admin [preauth]
+Nov 17 20:18:33 mhn-honeypot-6 sshd[11609]: Received disconnect from 167.99.90.137: 11: Bye Bye [preauth]
+Nov 17 20:18:34 mhn-honeypot-6 sshd[11611]: Received disconnect from 167.99.90.137: 11: Bye Bye [preauth]
+Nov 17 20:18:35 mhn-honeypot-6 sshd[11613]: Invalid user 1234 from 167.99.90.137
+Nov 17 20:18:35 mhn-honeypot-6 sshd[11613]: input_userauth_request: invalid user 1234 [preauth]
+Nov 17 20:18:35 mhn-honeypot-6 sshd[11613]: Received disconnect from 167.99.90.137: 11: Bye Bye [preauth]
+Nov 17 20:18:36 mhn-honeypot-6 sshd[11615]: Invalid user usuario from 167.99.90.137
+Nov 17 20:18:36 mhn-honeypot-6 sshd[11615]: input_userauth_request: invalid user usuario [preauth]
+Nov 17 20:18:36 mhn-honeypot-6 sshguard[1571]: Blocking 167.99.90.137:4 for >630secs: 40 danger in 4 attacks over 3 seconds (all: 40d in 1 abuses over 3s).
+Nov 17 20:22:08 mhn-honeypot-6 sshd[11620]: Invalid user admin from 58.255.54.30
+Nov 17 20:22:08 mhn-honeypot-6 sshd[11620]: input_userauth_request: invalid user admin [preauth]
+Nov 17 20:22:10 mhn-honeypot-6 sshd[11620]: Connection closed by 58.255.54.30 [preauth]
+Nov 17 21:17:01 mhn-honeypot-6 CRON[11681]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 17 21:17:01 mhn-honeypot-6 CRON[11681]: pam_unix(cron:session): session closed for user root
+Nov 17 21:26:38 mhn-honeypot-6 sshd[11691]: Invalid user ubnt from 167.99.90.137
+Nov 17 21:26:38 mhn-honeypot-6 sshd[11691]: input_userauth_request: invalid user ubnt [preauth]
+Nov 17 21:26:38 mhn-honeypot-6 sshd[11691]: Received disconnect from 167.99.90.137: 11: Bye Bye [preauth]
+Nov 17 21:26:38 mhn-honeypot-6 sshd[11693]: Invalid user admin from 167.99.90.137
+Nov 17 21:26:38 mhn-honeypot-6 sshd[11693]: input_userauth_request: invalid user admin [preauth]
+Nov 17 21:26:39 mhn-honeypot-6 sshd[11693]: Received disconnect from 167.99.90.137: 11: Bye Bye [preauth]
+Nov 17 21:26:40 mhn-honeypot-6 sshd[11695]: Received disconnect from 167.99.90.137: 11: Bye Bye [preauth]
+Nov 17 21:26:40 mhn-honeypot-6 sshd[11697]: Invalid user 1234 from 167.99.90.137
+Nov 17 21:26:40 mhn-honeypot-6 sshd[11697]: input_userauth_request: invalid user 1234 [preauth]
+Nov 17 21:26:41 mhn-honeypot-6 sshd[11697]: Received disconnect from 167.99.90.137: 11: Bye Bye [preauth]
+Nov 17 21:26:41 mhn-honeypot-6 sshd[11699]: Invalid user usuario from 167.99.90.137
+Nov 17 21:26:41 mhn-honeypot-6 sshd[11699]: input_userauth_request: invalid user usuario [preauth]
+Nov 17 21:26:41 mhn-honeypot-6 sshguard[1571]: Blocking 167.99.90.137:4 for >945secs: 40 danger in 4 attacks over 2 seconds (all: 80d in 2 abuses over 4088s).
+Nov 17 22:17:01 mhn-honeypot-6 CRON[11758]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 17 22:17:01 mhn-honeypot-6 CRON[11758]: pam_unix(cron:session): session closed for user root
+Nov 17 22:49:20 mhn-honeypot-6 sshd[11794]: Did not receive identification string from 173.249.59.152
+Nov 17 23:17:01 mhn-honeypot-6 CRON[11834]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 17 23:17:01 mhn-honeypot-6 CRON[11834]: pam_unix(cron:session): session closed for user root
+Nov 17 23:53:55 mhn-honeypot-6 sshd[11873]: Invalid user vyatta from 180.76.238.179
+Nov 17 23:53:55 mhn-honeypot-6 sshd[11873]: input_userauth_request: invalid user vyatta [preauth]
+Nov 17 23:53:56 mhn-honeypot-6 sshd[11873]: Received disconnect from 180.76.238.179: 11: Normal Shutdown, Thank you for playing [preauth]
+Nov 18 00:17:01 mhn-honeypot-6 CRON[11901]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 18 00:17:01 mhn-honeypot-6 CRON[11901]: pam_unix(cron:session): session closed for user root
+Nov 18 01:16:25 mhn-honeypot-6 sshd[11965]: Invalid user pi from 82.64.3.51
+Nov 18 01:16:25 mhn-honeypot-6 sshd[11965]: input_userauth_request: invalid user pi [preauth]
+Nov 18 01:16:25 mhn-honeypot-6 sshd[11965]: Connection closed by 82.64.3.51 [preauth]
+Nov 18 01:16:25 mhn-honeypot-6 sshd[11967]: Invalid user pi from 82.64.3.51
+Nov 18 01:16:25 mhn-honeypot-6 sshd[11967]: input_userauth_request: invalid user pi [preauth]
+Nov 18 01:16:25 mhn-honeypot-6 sshd[11967]: Connection closed by 82.64.3.51 [preauth]
+Nov 18 01:17:01 mhn-honeypot-6 CRON[11970]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 18 01:17:01 mhn-honeypot-6 CRON[11970]: pam_unix(cron:session): session closed for user root
+Nov 18 02:17:01 mhn-honeypot-6 CRON[12035]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 18 02:17:01 mhn-honeypot-6 CRON[12035]: pam_unix(cron:session): session closed for user root
+Nov 18 02:52:38 mhn-honeypot-6 sshd[12083]: Received disconnect from 209.141.62.36: 11: Bye Bye [preauth]
+Nov 18 02:52:38 mhn-honeypot-6 sshd[12085]: Received disconnect from 209.141.62.36: 11: Bye Bye [preauth]
+Nov 18 02:52:39 mhn-honeypot-6 sshd[12087]: Received disconnect from 209.141.62.36: 11: Bye Bye [preauth]
+Nov 18 02:52:39 mhn-honeypot-6 sshd[12089]: Invalid user admin from 209.141.62.36
+Nov 18 02:52:39 mhn-honeypot-6 sshd[12089]: input_userauth_request: invalid user admin [preauth]
+Nov 18 02:52:39 mhn-honeypot-6 sshd[12089]: Received disconnect from 209.141.62.36: 11: Bye Bye [preauth]
+Nov 18 02:52:40 mhn-honeypot-6 sshd[12091]: Invalid user admin from 209.141.62.36
+Nov 18 02:52:40 mhn-honeypot-6 sshd[12091]: input_userauth_request: invalid user admin [preauth]
+Nov 18 02:52:40 mhn-honeypot-6 sshd[12091]: Received disconnect from 209.141.62.36: 11: Bye Bye [preauth]
+Nov 18 02:52:41 mhn-honeypot-6 sshd[12093]: Invalid user pi from 209.141.62.36
+Nov 18 02:52:41 mhn-honeypot-6 sshd[12093]: input_userauth_request: invalid user pi [preauth]
+Nov 18 02:52:41 mhn-honeypot-6 sshd[12093]: Received disconnect from 209.141.62.36: 11: Bye Bye [preauth]
+Nov 18 02:52:41 mhn-honeypot-6 sshd[12095]: Invalid user support from 209.141.62.36
+Nov 18 02:52:41 mhn-honeypot-6 sshd[12095]: input_userauth_request: invalid user support [preauth]
+Nov 18 02:52:41 mhn-honeypot-6 sshguard[1571]: Blocking 209.141.62.36:4 for >630secs: 40 danger in 4 attacks over 2 seconds (all: 40d in 1 abuses over 2s).
+Nov 18 03:17:01 mhn-honeypot-6 CRON[12126]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 18 03:17:01 mhn-honeypot-6 CRON[12126]: pam_unix(cron:session): session closed for user root
+Nov 18 03:32:30 mhn-honeypot-6 sshd[12149]: Received disconnect from 205.185.120.192: 11: Bye Bye [preauth]
+Nov 18 03:32:30 mhn-honeypot-6 sshd[12151]: Received disconnect from 205.185.120.192: 11: Bye Bye [preauth]
+Nov 18 03:32:31 mhn-honeypot-6 sshd[12153]: Received disconnect from 205.185.120.192: 11: Bye Bye [preauth]
+Nov 18 03:32:31 mhn-honeypot-6 sshd[12155]: Invalid user admin from 205.185.120.192
+Nov 18 03:32:31 mhn-honeypot-6 sshd[12155]: input_userauth_request: invalid user admin [preauth]
+Nov 18 03:32:31 mhn-honeypot-6 sshd[12155]: Received disconnect from 205.185.120.192: 11: Bye Bye [preauth]
+Nov 18 03:32:32 mhn-honeypot-6 sshd[12157]: Invalid user admin from 205.185.120.192
+Nov 18 03:32:32 mhn-honeypot-6 sshd[12157]: input_userauth_request: invalid user admin [preauth]
+Nov 18 03:32:32 mhn-honeypot-6 sshd[12157]: Received disconnect from 205.185.120.192: 11: Bye Bye [preauth]
+Nov 18 03:32:32 mhn-honeypot-6 sshd[12159]: Invalid user pi from 205.185.120.192
+Nov 18 03:32:32 mhn-honeypot-6 sshd[12159]: input_userauth_request: invalid user pi [preauth]
+Nov 18 03:32:32 mhn-honeypot-6 sshd[12159]: Received disconnect from 205.185.120.192: 11: Bye Bye [preauth]
+Nov 18 03:32:32 mhn-honeypot-6 sshd[12161]: Invalid user support from 205.185.120.192
+Nov 18 03:32:32 mhn-honeypot-6 sshd[12161]: input_userauth_request: invalid user support [preauth]
+Nov 18 03:32:32 mhn-honeypot-6 sshguard[1571]: Blocking 205.185.120.192:4 for >630secs: 40 danger in 4 attacks over 1 seconds (all: 40d in 1 abuses over 1s).
+Nov 18 03:44:35 mhn-honeypot-6 sshd[12173]: Bad protocol version identification '\026\003\001\001"\001' from 164.52.24.164 port 57202
+Nov 18 03:45:25 mhn-honeypot-6 sshd[12174]: fatal: Read from socket failed: Connection reset by peer [preauth]
+Nov 18 04:17:01 mhn-honeypot-6 CRON[12209]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 18 04:17:01 mhn-honeypot-6 CRON[12209]: pam_unix(cron:session): session closed for user root
+Nov 18 05:17:01 mhn-honeypot-6 CRON[12274]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 18 05:17:01 mhn-honeypot-6 CRON[12274]: pam_unix(cron:session): session closed for user root
+Nov 18 06:17:01 mhn-honeypot-6 CRON[12339]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 18 06:17:01 mhn-honeypot-6 CRON[12339]: pam_unix(cron:session): session closed for user root
+Nov 18 06:25:01 mhn-honeypot-6 CRON[12358]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 18 06:46:19 mhn-honeypot-6 sshd[1512]: Received signal 15; terminating.
+Nov 18 06:46:19 mhn-honeypot-6 sshd[18709]: Server listening on 0.0.0.0 port 22.
+Nov 18 06:46:19 mhn-honeypot-6 sshd[18709]: Server listening on :: port 22.
+Nov 18 06:47:01 mhn-honeypot-6 CRON[27378]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 18 06:47:08 mhn-honeypot-6 CRON[27378]: pam_unix(cron:session): session closed for user root
+Nov 18 06:56:19 mhn-honeypot-6 CRON[12358]: pam_unix(cron:session): session closed for user root
+Nov 18 07:14:58 mhn-honeypot-6 sshd[3692]: Received disconnect from 68.183.175.24: 11: Bye Bye [preauth]
+Nov 18 07:14:59 mhn-honeypot-6 sshd[3694]: Received disconnect from 68.183.175.24: 11: Bye Bye [preauth]
+Nov 18 07:14:59 mhn-honeypot-6 sshd[3696]: Received disconnect from 68.183.175.24: 11: Bye Bye [preauth]
+Nov 18 07:14:59 mhn-honeypot-6 sshd[3698]: Received disconnect from 68.183.175.24: 11: Bye Bye [preauth]
+Nov 18 07:15:00 mhn-honeypot-6 sshd[3700]: Invalid user user from 68.183.175.24
+Nov 18 07:15:00 mhn-honeypot-6 sshd[3700]: input_userauth_request: invalid user user [preauth]
+Nov 18 07:15:00 mhn-honeypot-6 sshd[3700]: Received disconnect from 68.183.175.24: 11: Bye Bye [preauth]
+Nov 18 07:15:00 mhn-honeypot-6 sshd[3702]: Invalid user admin from 68.183.175.24
+Nov 18 07:15:00 mhn-honeypot-6 sshd[3702]: input_userauth_request: invalid user admin [preauth]
+Nov 18 07:15:00 mhn-honeypot-6 sshd[3702]: Received disconnect from 68.183.175.24: 11: Bye Bye [preauth]
+Nov 18 07:15:01 mhn-honeypot-6 sshd[3704]: Invalid user admin from 68.183.175.24
+Nov 18 07:15:01 mhn-honeypot-6 sshd[3704]: input_userauth_request: invalid user admin [preauth]
+Nov 18 07:15:01 mhn-honeypot-6 sshd[3704]: Received disconnect from 68.183.175.24: 11: Bye Bye [preauth]
+Nov 18 07:15:01 mhn-honeypot-6 sshd[3706]: Received disconnect from 68.183.175.24: 11: Bye Bye [preauth]
+Nov 18 07:15:01 mhn-honeypot-6 sshd[3708]: Invalid user admin from 68.183.175.24
+Nov 18 07:15:01 mhn-honeypot-6 sshd[3708]: input_userauth_request: invalid user admin [preauth]
+Nov 18 07:15:01 mhn-honeypot-6 sshguard[1571]: Blocking 68.183.175.24:4 for >630secs: 40 danger in 4 attacks over 1 seconds (all: 40d in 1 abuses over 1s).
+Nov 18 07:15:01 mhn-honeypot-6 sshd[3708]: Received disconnect from 68.183.175.24: 11: Bye Bye [preauth]
+Nov 18 07:17:01 mhn-honeypot-6 CRON[3712]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 18 07:17:01 mhn-honeypot-6 CRON[3712]: pam_unix(cron:session): session closed for user root
+Nov 18 08:17:01 mhn-honeypot-6 CRON[3778]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 18 08:17:01 mhn-honeypot-6 CRON[3778]: pam_unix(cron:session): session closed for user root
+Nov 18 09:17:01 mhn-honeypot-6 CRON[3843]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 18 09:17:01 mhn-honeypot-6 CRON[3843]: pam_unix(cron:session): session closed for user root
+Nov 18 10:17:01 mhn-honeypot-6 CRON[3918]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 18 10:17:01 mhn-honeypot-6 CRON[3918]: pam_unix(cron:session): session closed for user root
+Nov 18 10:26:00 mhn-honeypot-6 sshd[3927]: Invalid user admin from 123.20.105.49
+Nov 18 10:26:00 mhn-honeypot-6 sshd[3927]: input_userauth_request: invalid user admin [preauth]
+Nov 18 10:26:00 mhn-honeypot-6 sshd[3927]: Connection closed by 123.20.105.49 [preauth]
+Nov 18 10:30:07 mhn-honeypot-6 sshd[3932]: Received disconnect from 209.141.60.206: 11: Bye Bye [preauth]
+Nov 18 10:30:08 mhn-honeypot-6 sshd[3934]: Received disconnect from 209.141.60.206: 11: Bye Bye [preauth]
+Nov 18 10:30:08 mhn-honeypot-6 sshd[3936]: Received disconnect from 209.141.60.206: 11: Bye Bye [preauth]
+Nov 18 10:30:09 mhn-honeypot-6 sshd[3938]: Invalid user admin from 209.141.60.206
+Nov 18 10:30:09 mhn-honeypot-6 sshd[3938]: input_userauth_request: invalid user admin [preauth]
+Nov 18 10:30:09 mhn-honeypot-6 sshd[3938]: Received disconnect from 209.141.60.206: 11: Bye Bye [preauth]
+Nov 18 10:30:09 mhn-honeypot-6 sshd[3940]: Invalid user admin from 209.141.60.206
+Nov 18 10:30:09 mhn-honeypot-6 sshd[3940]: input_userauth_request: invalid user admin [preauth]
+Nov 18 10:30:11 mhn-honeypot-6 sshd[3940]: Received disconnect from 209.141.60.206: 11: Bye Bye [preauth]
+Nov 18 10:30:11 mhn-honeypot-6 sshd[3942]: Invalid user pi from 209.141.60.206
+Nov 18 10:30:11 mhn-honeypot-6 sshd[3942]: input_userauth_request: invalid user pi [preauth]
+Nov 18 10:30:11 mhn-honeypot-6 sshd[3942]: Received disconnect from 209.141.60.206: 11: Bye Bye [preauth]
+Nov 18 10:30:12 mhn-honeypot-6 sshd[3944]: Invalid user support from 209.141.60.206
+Nov 18 10:30:12 mhn-honeypot-6 sshguard[1571]: Blocking 209.141.60.206:4 for >630secs: 40 danger in 4 attacks over 3 seconds (all: 40d in 1 abuses over 3s).
+Nov 18 10:30:12 mhn-honeypot-6 sshd[3944]: input_userauth_request: invalid user support [preauth]
+Nov 18 11:17:01 mhn-honeypot-6 CRON[4000]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 18 11:17:01 mhn-honeypot-6 CRON[4000]: pam_unix(cron:session): session closed for user root
+Nov 18 12:10:22 mhn-honeypot-6 sshd[4060]: Connection closed by 5.101.40.81 [preauth]
+Nov 18 12:17:01 mhn-honeypot-6 CRON[4067]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 18 12:17:01 mhn-honeypot-6 CRON[4067]: pam_unix(cron:session): session closed for user root
+Nov 18 13:09:48 mhn-honeypot-6 sshd[4127]: Received disconnect from 60.223.226.154: 11: Bye Bye [preauth]
+Nov 18 13:09:53 mhn-honeypot-6 sshd[4129]: Received disconnect from 60.223.226.154: 11: Bye Bye [preauth]
+Nov 18 13:09:55 mhn-honeypot-6 sshd[4131]: Received disconnect from 60.223.226.154: 11: Bye Bye [preauth]
+Nov 18 13:09:57 mhn-honeypot-6 sshd[4133]: Received disconnect from 60.223.226.154: 11: Bye Bye [preauth]
+Nov 18 13:09:58 mhn-honeypot-6 sshd[4135]: Received disconnect from 60.223.226.154: 11: Bye Bye [preauth]
+Nov 18 13:10:00 mhn-honeypot-6 sshd[4137]: Received disconnect from 60.223.226.154: 11: Bye Bye [preauth]
+Nov 18 13:10:10 mhn-honeypot-6 sshd[4139]: Connection closed by 60.223.226.154 [preauth]
+Nov 18 13:17:01 mhn-honeypot-6 CRON[4156]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 18 13:17:01 mhn-honeypot-6 CRON[4156]: pam_unix(cron:session): session closed for user root
+Nov 18 13:55:14 mhn-honeypot-6 sshd[4196]: Did not receive identification string from 85.140.31.161
+Nov 18 13:55:15 mhn-honeypot-6 sshd[4197]: Bad protocol version identification 'GET / HTTP/1.1' from 85.140.31.161 port 61056
+Nov 18 13:55:15 mhn-honeypot-6 sshd[4198]: Bad protocol version identification 'GET / HTTP/1.1' from 85.140.31.161 port 61066
+Nov 18 13:55:15 mhn-honeypot-6 sshd[4199]: Bad protocol version identification 'GET / HTTP/1.1' from 85.140.31.161 port 61079
+Nov 18 14:17:01 mhn-honeypot-6 CRON[4225]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 18 14:17:01 mhn-honeypot-6 CRON[4225]: pam_unix(cron:session): session closed for user root
+Nov 18 14:36:15 mhn-honeypot-6 sshd[4251]: Invalid user test6 from 111.230.246.144
+Nov 18 14:36:15 mhn-honeypot-6 sshd[4251]: input_userauth_request: invalid user test6 [preauth]
+Nov 18 14:36:15 mhn-honeypot-6 sshd[4251]: Received disconnect from 111.230.246.144: 11: Normal Shutdown, Thank you for playing [preauth]
+Nov 18 14:52:58 mhn-honeypot-6 sshd[4265]: Did not receive identification string from 159.203.169.16
+Nov 18 15:17:01 mhn-honeypot-6 CRON[4293]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 18 15:17:01 mhn-honeypot-6 CRON[4293]: pam_unix(cron:session): session closed for user root
+Nov 18 16:17:01 mhn-honeypot-6 CRON[4358]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 18 16:17:01 mhn-honeypot-6 CRON[4358]: pam_unix(cron:session): session closed for user root
+Nov 18 17:17:01 mhn-honeypot-6 CRON[4433]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 18 17:17:01 mhn-honeypot-6 CRON[4433]: pam_unix(cron:session): session closed for user root
+Nov 18 17:59:00 mhn-honeypot-6 sshd[4476]: Invalid user pi from 2.84.89.42
+Nov 18 17:59:00 mhn-honeypot-6 sshd[4476]: input_userauth_request: invalid user pi [preauth]
+Nov 18 17:59:01 mhn-honeypot-6 sshd[4476]: Connection closed by 2.84.89.42 [preauth]
+Nov 18 17:59:04 mhn-honeypot-6 sshd[4478]: Connection closed by 2.84.89.42 [preauth]
+Nov 18 18:17:01 mhn-honeypot-6 CRON[4502]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 18 18:17:01 mhn-honeypot-6 CRON[4502]: pam_unix(cron:session): session closed for user root
+Nov 18 18:49:47 mhn-honeypot-6 sshd[4538]: Received disconnect from 209.141.35.247: 11: Bye Bye [preauth]
+Nov 18 18:49:48 mhn-honeypot-6 sshd[4540]: Received disconnect from 209.141.35.247: 11: Bye Bye [preauth]
+Nov 18 18:49:50 mhn-honeypot-6 sshd[4542]: Received disconnect from 209.141.35.247: 11: Bye Bye [preauth]
+Nov 18 18:49:50 mhn-honeypot-6 sshd[4544]: Invalid user admin from 209.141.35.247
+Nov 18 18:49:50 mhn-honeypot-6 sshd[4544]: input_userauth_request: invalid user admin [preauth]
+Nov 18 18:49:50 mhn-honeypot-6 sshd[4544]: Received disconnect from 209.141.35.247: 11: Bye Bye [preauth]
+Nov 18 18:49:51 mhn-honeypot-6 sshd[4546]: Invalid user admin from 209.141.35.247
+Nov 18 18:49:51 mhn-honeypot-6 sshd[4546]: input_userauth_request: invalid user admin [preauth]
+Nov 18 18:49:51 mhn-honeypot-6 sshd[4546]: Received disconnect from 209.141.35.247: 11: Bye Bye [preauth]
+Nov 18 18:49:51 mhn-honeypot-6 sshd[4548]: Invalid user pi from 209.141.35.247
+Nov 18 18:49:51 mhn-honeypot-6 sshd[4548]: input_userauth_request: invalid user pi [preauth]
+Nov 18 18:49:51 mhn-honeypot-6 sshd[4548]: Received disconnect from 209.141.35.247: 11: Bye Bye [preauth]
+Nov 18 18:49:51 mhn-honeypot-6 sshd[4550]: Invalid user support from 209.141.35.247
+Nov 18 18:49:51 mhn-honeypot-6 sshd[4550]: input_userauth_request: invalid user support [preauth]
+Nov 18 18:49:51 mhn-honeypot-6 sshguard[1571]: Blocking 209.141.35.247:4 for >630secs: 40 danger in 4 attacks over 1 seconds (all: 40d in 1 abuses over 1s).
+Nov 18 19:14:13 mhn-honeypot-6 sshd[4581]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:14:14 mhn-honeypot-6 sshd[4583]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:14:15 mhn-honeypot-6 sshd[4585]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:14:16 mhn-honeypot-6 sshd[4587]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:14:17 mhn-honeypot-6 sshd[4589]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:14:18 mhn-honeypot-6 sshd[4591]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:14:19 mhn-honeypot-6 sshd[4593]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:14:20 mhn-honeypot-6 sshd[4595]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:14:21 mhn-honeypot-6 sshd[4597]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:14:22 mhn-honeypot-6 sshd[4599]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:14:23 mhn-honeypot-6 sshd[4601]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:14:24 mhn-honeypot-6 sshd[4603]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:14:25 mhn-honeypot-6 sshd[4605]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:14:26 mhn-honeypot-6 sshd[4607]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:14:26 mhn-honeypot-6 sshd[4609]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:14:27 mhn-honeypot-6 sshd[4611]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:14:28 mhn-honeypot-6 sshd[4613]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:14:29 mhn-honeypot-6 sshd[4615]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:14:30 mhn-honeypot-6 sshd[4617]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:14:31 mhn-honeypot-6 sshd[4619]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:14:32 mhn-honeypot-6 sshd[4621]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:14:33 mhn-honeypot-6 sshd[4623]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:14:34 mhn-honeypot-6 sshd[4625]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:14:35 mhn-honeypot-6 sshd[4627]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:14:36 mhn-honeypot-6 sshd[4629]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:14:37 mhn-honeypot-6 sshd[4631]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:14:38 mhn-honeypot-6 sshd[4633]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:14:39 mhn-honeypot-6 sshd[4635]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:14:40 mhn-honeypot-6 sshd[4637]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:14:41 mhn-honeypot-6 sshd[4640]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:14:41 mhn-honeypot-6 sshd[4642]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:14:42 mhn-honeypot-6 sshd[4644]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:14:43 mhn-honeypot-6 sshd[4646]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:14:44 mhn-honeypot-6 sshd[4648]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:14:45 mhn-honeypot-6 sshd[4650]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:14:46 mhn-honeypot-6 sshd[4652]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:14:47 mhn-honeypot-6 sshd[4654]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:14:48 mhn-honeypot-6 sshd[4656]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:14:49 mhn-honeypot-6 sshd[4658]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:14:50 mhn-honeypot-6 sshd[4660]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:14:51 mhn-honeypot-6 sshd[4662]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:14:52 mhn-honeypot-6 sshd[4664]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:14:53 mhn-honeypot-6 sshd[4666]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:14:54 mhn-honeypot-6 sshd[4668]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:14:55 mhn-honeypot-6 sshd[4670]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:14:56 mhn-honeypot-6 sshd[4672]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:14:56 mhn-honeypot-6 sshd[4674]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:14:57 mhn-honeypot-6 sshd[4676]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:14:58 mhn-honeypot-6 sshd[4678]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:14:59 mhn-honeypot-6 sshd[4680]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:00 mhn-honeypot-6 sshd[4682]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:01 mhn-honeypot-6 sshd[4684]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:02 mhn-honeypot-6 sshd[4686]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:03 mhn-honeypot-6 sshd[4688]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:04 mhn-honeypot-6 sshd[4690]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:05 mhn-honeypot-6 sshd[4692]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:06 mhn-honeypot-6 sshd[4694]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:07 mhn-honeypot-6 sshd[4696]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:08 mhn-honeypot-6 sshd[4698]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:09 mhn-honeypot-6 sshd[4700]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:10 mhn-honeypot-6 sshd[4702]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:11 mhn-honeypot-6 sshd[4704]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:11 mhn-honeypot-6 sshd[4706]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:12 mhn-honeypot-6 sshd[4708]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:13 mhn-honeypot-6 sshd[4710]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:14 mhn-honeypot-6 sshd[4712]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:15 mhn-honeypot-6 sshd[4714]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:16 mhn-honeypot-6 sshd[4716]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:17 mhn-honeypot-6 sshd[4718]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:18 mhn-honeypot-6 sshd[4720]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:19 mhn-honeypot-6 sshd[4722]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:20 mhn-honeypot-6 sshd[4724]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:21 mhn-honeypot-6 sshd[4726]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:22 mhn-honeypot-6 sshd[4728]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:23 mhn-honeypot-6 sshd[4730]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:24 mhn-honeypot-6 sshd[4732]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:25 mhn-honeypot-6 sshd[4734]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:25 mhn-honeypot-6 sshd[4736]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:26 mhn-honeypot-6 sshd[4738]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:27 mhn-honeypot-6 sshd[4740]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:28 mhn-honeypot-6 sshd[4742]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:29 mhn-honeypot-6 sshd[4744]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:30 mhn-honeypot-6 sshd[4746]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:31 mhn-honeypot-6 sshd[4748]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:32 mhn-honeypot-6 sshd[4750]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:33 mhn-honeypot-6 sshd[4752]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:34 mhn-honeypot-6 sshd[4754]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:35 mhn-honeypot-6 sshd[4756]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:36 mhn-honeypot-6 sshd[4758]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:37 mhn-honeypot-6 sshd[4760]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:38 mhn-honeypot-6 sshd[4762]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:39 mhn-honeypot-6 sshd[4764]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:39 mhn-honeypot-6 sshd[4766]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:40 mhn-honeypot-6 sshd[4768]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:41 mhn-honeypot-6 sshd[4770]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:42 mhn-honeypot-6 sshd[4772]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:43 mhn-honeypot-6 sshd[4774]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:44 mhn-honeypot-6 sshd[4776]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:45 mhn-honeypot-6 sshd[4778]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:46 mhn-honeypot-6 sshd[4780]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:47 mhn-honeypot-6 sshd[4782]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:48 mhn-honeypot-6 sshd[4784]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:49 mhn-honeypot-6 sshd[4786]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:50 mhn-honeypot-6 sshd[4788]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:51 mhn-honeypot-6 sshd[4790]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:52 mhn-honeypot-6 sshd[4792]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:53 mhn-honeypot-6 sshd[4794]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:53 mhn-honeypot-6 sshd[4796]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:54 mhn-honeypot-6 sshd[4798]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:55 mhn-honeypot-6 sshd[4800]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:56 mhn-honeypot-6 sshd[4802]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:57 mhn-honeypot-6 sshd[4804]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:58 mhn-honeypot-6 sshd[4806]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:15:59 mhn-honeypot-6 sshd[4808]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:16:00 mhn-honeypot-6 sshd[4810]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:16:01 mhn-honeypot-6 sshd[4812]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:16:02 mhn-honeypot-6 sshd[4814]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:16:03 mhn-honeypot-6 sshd[4816]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:16:04 mhn-honeypot-6 sshd[4818]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:16:05 mhn-honeypot-6 sshd[4820]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:16:06 mhn-honeypot-6 sshd[4822]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:16:07 mhn-honeypot-6 sshd[4825]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:16:07 mhn-honeypot-6 sshd[4827]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:16:08 mhn-honeypot-6 sshd[4829]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:16:09 mhn-honeypot-6 sshd[4831]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:16:10 mhn-honeypot-6 sshd[4833]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:16:11 mhn-honeypot-6 sshd[4835]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:16:12 mhn-honeypot-6 sshd[4837]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:16:13 mhn-honeypot-6 sshd[4839]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:16:14 mhn-honeypot-6 sshd[4841]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:16:15 mhn-honeypot-6 sshd[4843]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:16:16 mhn-honeypot-6 sshd[4845]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:16:17 mhn-honeypot-6 sshd[4847]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:16:18 mhn-honeypot-6 sshd[4849]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:16:19 mhn-honeypot-6 sshd[4851]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:16:20 mhn-honeypot-6 sshd[4853]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:16:21 mhn-honeypot-6 sshd[4855]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:16:22 mhn-honeypot-6 sshd[4857]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:16:22 mhn-honeypot-6 sshd[4859]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:16:23 mhn-honeypot-6 sshd[4861]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:16:24 mhn-honeypot-6 sshd[4863]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:16:25 mhn-honeypot-6 sshd[4865]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:16:26 mhn-honeypot-6 sshd[4867]: Received disconnect from 191.96.249.117: 11: Bye Bye [preauth]
+Nov 18 19:17:01 mhn-honeypot-6 CRON[4869]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 18 19:17:01 mhn-honeypot-6 CRON[4869]: pam_unix(cron:session): session closed for user root
+Nov 18 19:39:31 mhn-honeypot-6 sshd[4898]: Invalid user daniel from 36.55.230.5
+Nov 18 19:39:31 mhn-honeypot-6 sshd[4898]: input_userauth_request: invalid user daniel [preauth]
+Nov 18 19:39:31 mhn-honeypot-6 sshd[4898]: Received disconnect from 36.55.230.5: 11: Normal Shutdown, Thank you for playing [preauth]
+Nov 18 20:01:56 mhn-honeypot-6 sshd[4925]: Invalid user octest from 202.29.30.206
+Nov 18 20:01:56 mhn-honeypot-6 sshd[4925]: input_userauth_request: invalid user octest [preauth]
+Nov 18 20:01:56 mhn-honeypot-6 sshd[4925]: Connection closed by 202.29.30.206 [preauth]
+Nov 18 20:14:01 mhn-honeypot-6 sshd[4946]: Invalid user gentoo from 151.80.20.238
+Nov 18 20:14:01 mhn-honeypot-6 sshd[4946]: input_userauth_request: invalid user gentoo [preauth]
+Nov 18 20:14:01 mhn-honeypot-6 sshd[4946]: Connection closed by 151.80.20.238 [preauth]
+Nov 18 20:17:01 mhn-honeypot-6 CRON[4950]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 18 20:17:01 mhn-honeypot-6 CRON[4950]: pam_unix(cron:session): session closed for user root
+Nov 18 20:24:18 mhn-honeypot-6 sshd[4958]: Invalid user admin from 181.55.95.52
+Nov 18 20:24:18 mhn-honeypot-6 sshd[4958]: input_userauth_request: invalid user admin [preauth]
+Nov 18 20:24:18 mhn-honeypot-6 sshd[4958]: Connection closed by 181.55.95.52 [preauth]
+Nov 18 20:29:02 mhn-honeypot-6 sshd[4963]: Invalid user henk from 151.80.20.238
+Nov 18 20:29:02 mhn-honeypot-6 sshd[4963]: input_userauth_request: invalid user henk [preauth]
+Nov 18 20:29:02 mhn-honeypot-6 sshd[4963]: Connection closed by 151.80.20.238 [preauth]
+Nov 18 20:29:49 mhn-honeypot-6 sshd[4966]: Connection closed by 217.40.104.61 [preauth]
+Nov 18 20:29:54 mhn-honeypot-6 sshd[4968]: Connection closed by 217.40.104.61 [preauth]
+Nov 18 20:30:04 mhn-honeypot-6 sshd[4970]: Connection closed by 175.184.233.107 [preauth]
+Nov 18 20:30:05 mhn-honeypot-6 sshd[4972]: Connection closed by 175.184.233.107 [preauth]
+Nov 18 20:30:58 mhn-honeypot-6 sshd[4975]: Invalid user gentoo from 181.28.191.54
+Nov 18 20:30:58 mhn-honeypot-6 sshd[4975]: input_userauth_request: invalid user gentoo [preauth]
+Nov 18 20:30:58 mhn-honeypot-6 sshd[4975]: Connection closed by 181.28.191.54 [preauth]
+Nov 18 20:34:45 mhn-honeypot-6 sshd[4979]: Connection closed by 115.146.126.209 [preauth]
+Nov 18 20:37:35 mhn-honeypot-6 sshd[4983]: Invalid user secure from 121.134.204.54
+Nov 18 20:37:35 mhn-honeypot-6 sshd[4983]: input_userauth_request: invalid user secure [preauth]
+Nov 18 20:37:35 mhn-honeypot-6 sshd[4983]: Connection closed by 121.134.204.54 [preauth]
+Nov 18 20:40:27 mhn-honeypot-6 sshd[4987]: Connection closed by 37.187.114.136 [preauth]
+Nov 18 20:43:57 mhn-honeypot-6 sshd[5002]: Invalid user us from 151.80.20.238
+Nov 18 20:43:57 mhn-honeypot-6 sshd[5002]: input_userauth_request: invalid user us [preauth]
+Nov 18 20:43:58 mhn-honeypot-6 sshd[5002]: Connection closed by 151.80.20.238 [preauth]
+Nov 18 20:58:31 mhn-honeypot-6 sshd[5014]: Invalid user yoshitaka from 96.67.189.180
+Nov 18 20:58:31 mhn-honeypot-6 sshd[5014]: input_userauth_request: invalid user yoshitaka [preauth]
+Nov 18 20:58:31 mhn-honeypot-6 sshd[5014]: Connection closed by 96.67.189.180 [preauth]
+Nov 18 20:58:59 mhn-honeypot-6 sshd[5016]: Invalid user blaise from 121.134.204.54
+Nov 18 20:58:59 mhn-honeypot-6 sshd[5016]: input_userauth_request: invalid user blaise [preauth]
+Nov 18 20:59:00 mhn-honeypot-6 sshd[5016]: Connection closed by 121.134.204.54 [preauth]
+Nov 18 21:03:16 mhn-honeypot-6 sshd[5021]: Invalid user ts3 from 185.45.163.238
+Nov 18 21:03:16 mhn-honeypot-6 sshd[5021]: input_userauth_request: invalid user ts3 [preauth]
+Nov 18 21:03:17 mhn-honeypot-6 sshd[5021]: Connection closed by 185.45.163.238 [preauth]
+Nov 18 21:11:43 mhn-honeypot-6 sshd[5039]: Connection closed by 217.40.104.61 [preauth]
+Nov 18 21:11:44 mhn-honeypot-6 sshd[5043]: Invalid user jenkins from 202.29.30.206
+Nov 18 21:11:44 mhn-honeypot-6 sshd[5043]: input_userauth_request: invalid user jenkins [preauth]
+Nov 18 21:11:45 mhn-honeypot-6 sshd[5043]: Connection closed by 202.29.30.206 [preauth]
+Nov 18 21:11:45 mhn-honeypot-6 sshd[5041]: Connection closed by 217.40.104.61 [preauth]
+Nov 18 21:12:10 mhn-honeypot-6 sshd[5045]: Invalid user septembre from 181.28.191.54
+Nov 18 21:12:10 mhn-honeypot-6 sshd[5045]: input_userauth_request: invalid user septembre [preauth]
+Nov 18 21:12:10 mhn-honeypot-6 sshd[5045]: Connection closed by 181.28.191.54 [preauth]
+Nov 18 21:13:01 mhn-honeypot-6 sshd[5048]: Connection closed by 175.184.233.107 [preauth]
+Nov 18 21:13:04 mhn-honeypot-6 sshd[5050]: Connection closed by 175.184.233.107 [preauth]
+Nov 18 21:13:38 mhn-honeypot-6 sshd[5052]: Invalid user db2fenc2 from 152.249.68.53
+Nov 18 21:13:38 mhn-honeypot-6 sshd[5052]: input_userauth_request: invalid user db2fenc2 [preauth]
+Nov 18 21:13:38 mhn-honeypot-6 sshd[5052]: Connection closed by 152.249.68.53 [preauth]
+Nov 18 21:15:00 mhn-honeypot-6 sshd[5055]: Invalid user henk from 181.28.191.54
+Nov 18 21:15:00 mhn-honeypot-6 sshd[5055]: input_userauth_request: invalid user henk [preauth]
+Nov 18 21:15:00 mhn-honeypot-6 sshd[5055]: Connection closed by 181.28.191.54 [preauth]
+Nov 18 21:16:25 mhn-honeypot-6 sshd[5058]: Connection closed by 77.231.66.164 [preauth]
+Nov 18 21:17:01 mhn-honeypot-6 CRON[5061]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 18 21:17:01 mhn-honeypot-6 CRON[5061]: pam_unix(cron:session): session closed for user root
+Nov 18 21:19:17 mhn-honeypot-6 sshd[5065]: Invalid user golf from 178.33.228.67
+Nov 18 21:19:17 mhn-honeypot-6 sshd[5065]: input_userauth_request: invalid user golf [preauth]
+Nov 18 21:19:17 mhn-honeypot-6 sshd[5065]: Connection closed by 178.33.228.67 [preauth]
+Nov 18 21:19:20 mhn-honeypot-6 sshd[5067]: Invalid user ts3 from 45.55.254.13
+Nov 18 21:19:20 mhn-honeypot-6 sshd[5067]: input_userauth_request: invalid user ts3 [preauth]
+Nov 18 21:19:20 mhn-honeypot-6 sshd[5067]: Connection closed by 45.55.254.13 [preauth]
+Nov 18 21:23:37 mhn-honeypot-6 sshd[5072]: Connection closed by 51.38.50.239 [preauth]
+Nov 18 21:24:17 mhn-honeypot-6 sshd[5075]: Invalid user tomcat from 115.146.126.209
+Nov 18 21:24:17 mhn-honeypot-6 sshd[5075]: input_userauth_request: invalid user tomcat [preauth]
+Nov 18 21:24:18 mhn-honeypot-6 sshd[5075]: Connection closed by 115.146.126.209 [preauth]
+Nov 18 21:25:06 mhn-honeypot-6 sshd[5077]: Invalid user nero from 186.28.255.235
+Nov 18 21:25:06 mhn-honeypot-6 sshd[5077]: input_userauth_request: invalid user nero [preauth]
+Nov 18 21:25:06 mhn-honeypot-6 sshd[5077]: Connection closed by 186.28.255.235 [preauth]
+Nov 18 21:25:44 mhn-honeypot-6 sshd[5080]: Invalid user tomcat from 115.146.126.209
+Nov 18 21:25:44 mhn-honeypot-6 sshd[5080]: input_userauth_request: invalid user tomcat [preauth]
+Nov 18 21:25:44 mhn-honeypot-6 sshd[5080]: Connection closed by 115.146.126.209 [preauth]
+Nov 18 21:26:21 mhn-honeypot-6 sshd[5082]: Invalid user adminuser from 118.97.140.237
+Nov 18 21:26:21 mhn-honeypot-6 sshd[5082]: input_userauth_request: invalid user adminuser [preauth]
+Nov 18 21:26:21 mhn-honeypot-6 sshd[5082]: Connection closed by 118.97.140.237 [preauth]
+Nov 18 21:26:55 mhn-honeypot-6 sshd[5085]: Connection closed by 51.75.195.118 [preauth]
+Nov 18 21:26:55 mhn-honeypot-6 sshd[5087]: Connection closed by 51.75.195.118 [preauth]
+Nov 18 21:31:50 mhn-honeypot-6 sshd[5092]: Invalid user benjamin from 190.129.69.146
+Nov 18 21:31:50 mhn-honeypot-6 sshd[5092]: input_userauth_request: invalid user benjamin [preauth]
+Nov 18 21:31:50 mhn-honeypot-6 sshd[5092]: Connection closed by 190.129.69.146 [preauth]
+Nov 18 21:48:57 mhn-honeypot-6 sshd[5116]: Invalid user apache from 118.97.140.237
+Nov 18 21:48:57 mhn-honeypot-6 sshd[5116]: input_userauth_request: invalid user apache [preauth]
+Nov 18 21:48:58 mhn-honeypot-6 sshd[5116]: Connection closed by 118.97.140.237 [preauth]
+Nov 18 21:52:27 mhn-honeypot-6 sshd[5120]: Connection closed by 217.40.104.61 [preauth]
+Nov 18 21:52:28 mhn-honeypot-6 sshd[5122]: Connection closed by 217.40.104.61 [preauth]
+Nov 18 21:56:04 mhn-honeypot-6 sshd[5129]: Connection closed by 175.184.233.107 [preauth]
+Nov 18 21:56:04 mhn-honeypot-6 sshd[5127]: Connection closed by 175.184.233.107 [preauth]
+Nov 18 21:56:06 mhn-honeypot-6 sshd[5131]: Invalid user xerox from 181.28.191.54
+Nov 18 21:56:06 mhn-honeypot-6 sshd[5131]: input_userauth_request: invalid user xerox [preauth]
+Nov 18 21:56:07 mhn-honeypot-6 sshd[5131]: Connection closed by 181.28.191.54 [preauth]
+Nov 18 21:58:56 mhn-honeypot-6 sshd[5145]: Invalid user us from 181.28.191.54
+Nov 18 21:58:56 mhn-honeypot-6 sshd[5145]: input_userauth_request: invalid user us [preauth]
+Nov 18 21:58:56 mhn-honeypot-6 sshd[5145]: Connection closed by 181.28.191.54 [preauth]
+Nov 18 22:11:29 mhn-honeypot-6 sshd[5156]: Invalid user das from 118.97.140.237
+Nov 18 22:11:29 mhn-honeypot-6 sshd[5156]: input_userauth_request: invalid user das [preauth]
+Nov 18 22:11:30 mhn-honeypot-6 sshd[5156]: Connection closed by 118.97.140.237 [preauth]
+Nov 18 22:15:18 mhn-honeypot-6 sshd[5160]: Connection closed by 115.146.126.209 [preauth]
+Nov 18 22:16:02 mhn-honeypot-6 sshd[5163]: Connection closed by 94.140.226.177 [preauth]
+Nov 18 22:16:38 mhn-honeypot-6 sshd[5165]: Connection closed by 115.146.126.209 [preauth]
+Nov 18 22:17:01 mhn-honeypot-6 CRON[5168]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 18 22:17:01 mhn-honeypot-6 CRON[5168]: pam_unix(cron:session): session closed for user root
+Nov 18 22:21:05 mhn-honeypot-6 sshd[5173]: Invalid user ftptest from 202.29.30.206
+Nov 18 22:21:05 mhn-honeypot-6 sshd[5173]: input_userauth_request: invalid user ftptest [preauth]
+Nov 18 22:21:05 mhn-honeypot-6 sshd[5173]: Connection closed by 202.29.30.206 [preauth]
+Nov 18 22:25:03 mhn-honeypot-6 sshd[5178]: Invalid user guillaume from 203.110.240.201
+Nov 18 22:25:03 mhn-honeypot-6 sshd[5178]: input_userauth_request: invalid user guillaume [preauth]
+Nov 18 22:25:03 mhn-honeypot-6 sshd[5178]: Connection closed by 203.110.240.201 [preauth]
+Nov 18 22:54:53 mhn-honeypot-6 sshd[5221]: Invalid user constant from 106.241.17.244
+Nov 18 22:54:53 mhn-honeypot-6 sshd[5221]: input_userauth_request: invalid user constant [preauth]
+Nov 18 22:54:54 mhn-honeypot-6 sshd[5221]: Connection closed by 106.241.17.244 [preauth]
+Nov 18 22:56:21 mhn-honeypot-6 sshd[5224]: Invalid user setup from 2.95.126.43
+Nov 18 22:56:21 mhn-honeypot-6 sshd[5224]: input_userauth_request: invalid user setup [preauth]
+Nov 18 22:56:21 mhn-honeypot-6 sshd[5224]: Connection closed by 2.95.126.43 [preauth]
+Nov 18 23:00:08 mhn-honeypot-6 sshd[5229]: Connection closed by 190.14.247.90 [preauth]
+Nov 18 23:01:16 mhn-honeypot-6 sshd[5231]: Invalid user william from 24.37.196.182
+Nov 18 23:01:16 mhn-honeypot-6 sshd[5231]: input_userauth_request: invalid user william [preauth]
+Nov 18 23:01:16 mhn-honeypot-6 sshd[5231]: Connection closed by 24.37.196.182 [preauth]
+Nov 18 23:03:16 mhn-honeypot-6 sshd[5235]: Connection closed by 190.6.25.159 [preauth]
+Nov 18 23:17:01 mhn-honeypot-6 CRON[5247]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 18 23:17:01 mhn-honeypot-6 CRON[5247]: pam_unix(cron:session): session closed for user root
+Nov 18 23:17:19 mhn-honeypot-6 sshd[5250]: Received disconnect from 116.31.116.2: 11: Bye Bye [preauth]
+Nov 18 23:17:21 mhn-honeypot-6 sshd[5252]: Received disconnect from 116.31.116.2: 11: Bye Bye [preauth]
+Nov 18 23:17:23 mhn-honeypot-6 sshd[5254]: Received disconnect from 116.31.116.2: 11: Bye Bye [preauth]
+Nov 18 23:17:26 mhn-honeypot-6 sshd[5256]: Received disconnect from 116.31.116.2: 11: Bye Bye [preauth]
+Nov 18 23:17:28 mhn-honeypot-6 sshd[5258]: Invalid user salva from 116.31.116.2
+Nov 18 23:17:28 mhn-honeypot-6 sshd[5258]: input_userauth_request: invalid user salva [preauth]
+Nov 18 23:17:29 mhn-honeypot-6 sshd[5258]: Received disconnect from 116.31.116.2: 11: Bye Bye [preauth]
+Nov 18 23:17:32 mhn-honeypot-6 sshd[5260]: Received disconnect from 116.31.116.2: 11: Bye Bye [preauth]
+Nov 18 23:17:35 mhn-honeypot-6 sshd[5262]: Received disconnect from 116.31.116.2: 11: Bye Bye [preauth]
+Nov 18 23:18:50 mhn-honeypot-6 sshd[5265]: Connection closed by 77.231.66.164 [preauth]
+Nov 18 23:20:10 mhn-honeypot-6 sshd[5268]: Connection closed by 77.231.66.164 [preauth]
+Nov 18 23:27:25 mhn-honeypot-6 sshd[5285]: Invalid user admin from 45.55.254.13
+Nov 18 23:27:25 mhn-honeypot-6 sshd[5285]: input_userauth_request: invalid user admin [preauth]
+Nov 18 23:27:25 mhn-honeypot-6 sshd[5285]: Connection closed by 45.55.254.13 [preauth]
+Nov 18 23:29:21 mhn-honeypot-6 sshd[5288]: Connection closed by 190.6.25.159 [preauth]
+Nov 18 23:29:26 mhn-honeypot-6 sshd[5290]: Invalid user ovhuser from 45.55.254.13
+Nov 18 23:29:26 mhn-honeypot-6 sshd[5290]: input_userauth_request: invalid user ovhuser [preauth]
+Nov 18 23:29:26 mhn-honeypot-6 sshd[5290]: Connection closed by 45.55.254.13 [preauth]
+Nov 18 23:32:25 mhn-honeypot-6 sshd[5294]: Invalid user norbert from 152.249.68.53
+Nov 18 23:32:25 mhn-honeypot-6 sshd[5294]: input_userauth_request: invalid user norbert [preauth]
+Nov 18 23:32:25 mhn-honeypot-6 sshd[5294]: Connection closed by 152.249.68.53 [preauth]
+Nov 18 23:33:38 mhn-honeypot-6 sshd[5297]: Bad protocol version identification '' from 185.35.63.42 port 44780
+Nov 18 23:35:13 mhn-honeypot-6 sshd[5299]: Invalid user vps from 24.37.196.182
+Nov 18 23:35:13 mhn-honeypot-6 sshd[5299]: input_userauth_request: invalid user vps [preauth]
+Nov 18 23:35:13 mhn-honeypot-6 sshd[5299]: Connection closed by 24.37.196.182 [preauth]
+Nov 18 23:37:04 mhn-honeypot-6 sshd[5303]: Invalid user kent from 201.20.36.4
+Nov 18 23:37:04 mhn-honeypot-6 sshd[5303]: input_userauth_request: invalid user kent [preauth]
+Nov 18 23:37:04 mhn-honeypot-6 sshd[5303]: Connection closed by 201.20.36.4 [preauth]
+Nov 18 23:37:46 mhn-honeypot-6 sshd[5305]: Connection closed by 51.38.50.239 [preauth]
+Nov 18 23:38:28 mhn-honeypot-6 sshd[5307]: Connection closed by 51.38.50.239 [preauth]
+Nov 18 23:42:12 mhn-honeypot-6 sshd[5312]: Connection closed by 106.241.17.244 [preauth]
+Nov 18 23:42:33 mhn-honeypot-6 sshd[5314]: Invalid user test from 106.241.17.244
+Nov 18 23:42:33 mhn-honeypot-6 sshd[5314]: input_userauth_request: invalid user test [preauth]
+Nov 18 23:42:33 mhn-honeypot-6 sshd[5314]: Connection closed by 106.241.17.244 [preauth]
+Nov 18 23:43:02 mhn-honeypot-6 sshd[5317]: Invalid user member from 186.28.255.235
+Nov 18 23:43:02 mhn-honeypot-6 sshd[5317]: input_userauth_request: invalid user member [preauth]
+Nov 18 23:43:02 mhn-honeypot-6 sshd[5317]: Connection closed by 186.28.255.235 [preauth]
+Nov 18 23:46:25 mhn-honeypot-6 sshd[5321]: Connection closed by 37.187.114.136 [preauth]
+Nov 18 23:47:34 mhn-honeypot-6 sshd[5334]: Connection closed by 190.14.247.90 [preauth]
+Nov 18 23:48:20 mhn-honeypot-6 sshd[5336]: Connection closed by 190.14.247.90 [preauth]
+Nov 18 23:49:03 mhn-honeypot-6 sshd[5339]: Invalid user admin from 101.28.247.133
+Nov 18 23:49:03 mhn-honeypot-6 sshd[5339]: input_userauth_request: invalid user admin [preauth]
+Nov 18 23:49:04 mhn-honeypot-6 sshd[5339]: Connection closed by 101.28.247.133 [preauth]
+Nov 18 23:50:15 mhn-honeypot-6 sshd[5342]: Invalid user fabrice from 24.37.196.182
+Nov 18 23:50:15 mhn-honeypot-6 sshd[5342]: input_userauth_request: invalid user fabrice [preauth]
+Nov 18 23:50:15 mhn-honeypot-6 sshd[5342]: Connection closed by 24.37.196.182 [preauth]
+Nov 18 23:51:31 mhn-honeypot-6 sshd[5345]: Invalid user deploy from 190.6.25.159
+Nov 18 23:51:31 mhn-honeypot-6 sshd[5345]: input_userauth_request: invalid user deploy [preauth]
+Nov 18 23:51:32 mhn-honeypot-6 sshd[5345]: Connection closed by 190.6.25.159 [preauth]
+Nov 18 23:52:04 mhn-honeypot-6 sshd[5347]: Invalid user ftpadmin from 103.242.110.45
+Nov 18 23:52:04 mhn-honeypot-6 sshd[5347]: input_userauth_request: invalid user ftpadmin [preauth]
+Nov 18 23:52:04 mhn-honeypot-6 sshd[5347]: Connection closed by 103.242.110.45 [preauth]
+Nov 18 23:52:57 mhn-honeypot-6 sshd[5350]: Connection closed by 51.75.195.118 [preauth]
+Nov 18 23:53:01 mhn-honeypot-6 sshd[5352]: Connection closed by 51.75.195.118 [preauth]
+Nov 18 23:54:49 mhn-honeypot-6 sshd[5355]: Received disconnect from 222.184.72.66: 11: Bye Bye [preauth]
+Nov 18 23:54:50 mhn-honeypot-6 sshd[5357]: Received disconnect from 222.184.72.66: 11: Bye Bye [preauth]
+Nov 18 23:54:52 mhn-honeypot-6 sshd[5359]: Received disconnect from 222.184.72.66: 11: Bye Bye [preauth]
+Nov 18 23:54:54 mhn-honeypot-6 sshd[5361]: Received disconnect from 222.184.72.66: 11: Bye Bye [preauth]
+Nov 18 23:54:56 mhn-honeypot-6 sshd[5363]: Received disconnect from 222.184.72.66: 11: Bye Bye [preauth]
+Nov 18 23:54:58 mhn-honeypot-6 sshd[5365]: Received disconnect from 222.184.72.66: 11: Bye Bye [preauth]
+Nov 18 23:58:00 mhn-honeypot-6 sshd[5369]: Invalid user steven from 178.155.249.205
+Nov 18 23:58:00 mhn-honeypot-6 sshd[5369]: input_userauth_request: invalid user steven [preauth]
+Nov 18 23:58:01 mhn-honeypot-6 sshd[5369]: Connection closed by 178.155.249.205 [preauth]
+Nov 18 23:59:37 mhn-honeypot-6 sshd[5372]: Invalid user hekz from 201.20.36.4
+Nov 18 23:59:37 mhn-honeypot-6 sshd[5372]: input_userauth_request: invalid user hekz [preauth]
+Nov 18 23:59:37 mhn-honeypot-6 sshd[5372]: Connection closed by 201.20.36.4 [preauth]
+Nov 19 00:01:04 mhn-honeypot-6 sshd[5375]: Connection closed by 46.188.16.55 [preauth]
+Nov 19 00:08:56 mhn-honeypot-6 sshd[5383]: Did not receive identification string from 178.73.215.171
+Nov 19 00:12:26 mhn-honeypot-6 sshd[5386]: Invalid user vali from 101.28.247.133
+Nov 19 00:12:26 mhn-honeypot-6 sshd[5386]: input_userauth_request: invalid user vali [preauth]
+Nov 19 00:12:26 mhn-honeypot-6 sshd[5386]: Connection closed by 101.28.247.133 [preauth]
+Nov 19 00:17:01 mhn-honeypot-6 CRON[5401]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 19 00:17:01 mhn-honeypot-6 CRON[5401]: pam_unix(cron:session): session closed for user root
+Nov 19 00:17:04 mhn-honeypot-6 sshd[5404]: Invalid user kslewin from 185.189.115.37
+Nov 19 00:17:04 mhn-honeypot-6 sshd[5404]: input_userauth_request: invalid user kslewin [preauth]
+Nov 19 00:17:04 mhn-honeypot-6 sshd[5404]: Connection closed by 185.189.115.37 [preauth]
+Nov 19 00:18:52 mhn-honeypot-6 sshd[5408]: Invalid user theodore from 190.6.25.159
+Nov 19 00:18:52 mhn-honeypot-6 sshd[5408]: input_userauth_request: invalid user theodore [preauth]
+Nov 19 00:18:52 mhn-honeypot-6 sshd[5408]: Connection closed by 190.6.25.159 [preauth]
+Nov 19 00:22:28 mhn-honeypot-6 sshd[5412]: Connection closed by 24.37.196.182 [preauth]
+Nov 19 00:22:47 mhn-honeypot-6 sshd[5414]: Invalid user test from 201.20.36.4
+Nov 19 00:22:47 mhn-honeypot-6 sshd[5414]: input_userauth_request: invalid user test [preauth]
+Nov 19 00:22:47 mhn-honeypot-6 sshd[5414]: Connection closed by 201.20.36.4 [preauth]
+Nov 19 00:24:40 mhn-honeypot-6 sshd[5418]: Invalid user admin from 14.248.180.173
+Nov 19 00:24:40 mhn-honeypot-6 sshd[5418]: input_userauth_request: invalid user admin [preauth]
+Nov 19 00:24:41 mhn-honeypot-6 sshd[5418]: Connection closed by 14.248.180.173 [preauth]
+Nov 19 00:29:11 mhn-honeypot-6 sshd[5423]: Invalid user deploy5 from 203.110.240.201
+Nov 19 00:29:11 mhn-honeypot-6 sshd[5423]: input_userauth_request: invalid user deploy5 [preauth]
+Nov 19 00:29:12 mhn-honeypot-6 sshd[5423]: Connection closed by 203.110.240.201 [preauth]
+Nov 19 00:29:52 mhn-honeypot-6 sshd[5425]: Invalid user noah from 106.241.17.244
+Nov 19 00:29:52 mhn-honeypot-6 sshd[5425]: input_userauth_request: invalid user noah [preauth]
+Nov 19 00:29:52 mhn-honeypot-6 sshd[5425]: Connection closed by 106.241.17.244 [preauth]
+Nov 19 00:30:12 mhn-honeypot-6 sshd[5428]: Invalid user test from 106.241.17.244
+Nov 19 00:30:12 mhn-honeypot-6 sshd[5428]: input_userauth_request: invalid user test [preauth]
+Nov 19 00:30:12 mhn-honeypot-6 sshd[5428]: Connection closed by 106.241.17.244 [preauth]
+Nov 19 00:31:08 mhn-honeypot-6 sshd[5430]: Invalid user server from 178.155.249.205
+Nov 19 00:31:08 mhn-honeypot-6 sshd[5430]: input_userauth_request: invalid user server [preauth]
+Nov 19 00:31:09 mhn-honeypot-6 sshd[5430]: Connection closed by 178.155.249.205 [preauth]
+Nov 19 00:33:44 mhn-honeypot-6 sshd[5434]: Connection closed by 178.155.249.205 [preauth]
+Nov 19 00:35:55 mhn-honeypot-6 sshd[5437]: Connection closed by 190.14.247.90 [preauth]
+Nov 19 00:36:01 mhn-honeypot-6 sshd[5450]: Invalid user user1 from 101.28.247.133
+Nov 19 00:36:01 mhn-honeypot-6 sshd[5450]: input_userauth_request: invalid user user1 [preauth]
+Nov 19 00:36:01 mhn-honeypot-6 sshd[5450]: Connection closed by 101.28.247.133 [preauth]
+Nov 19 00:36:40 mhn-honeypot-6 sshd[5452]: Connection closed by 190.14.247.90 [preauth]
+Nov 19 00:38:34 mhn-honeypot-6 sshd[5455]: Invalid user install from 24.37.196.182
+Nov 19 00:38:34 mhn-honeypot-6 sshd[5455]: input_userauth_request: invalid user install [preauth]
+Nov 19 00:38:34 mhn-honeypot-6 sshd[5455]: Connection closed by 24.37.196.182 [preauth]
+Nov 19 00:40:12 mhn-honeypot-6 sshd[5459]: Invalid user rakesh from 190.6.25.159
+Nov 19 00:40:12 mhn-honeypot-6 sshd[5459]: input_userauth_request: invalid user rakesh [preauth]
+Nov 19 00:40:12 mhn-honeypot-6 sshd[5459]: Connection closed by 190.6.25.159 [preauth]
+Nov 19 00:48:01 mhn-honeypot-6 sshd[5466]: Connection closed by 37.187.114.136 [preauth]
+Nov 19 00:55:57 mhn-honeypot-6 sshd[5474]: Invalid user mcserver from 36.67.154.57
+Nov 19 00:55:57 mhn-honeypot-6 sshd[5474]: input_userauth_request: invalid user mcserver [preauth]
+Nov 19 00:55:57 mhn-honeypot-6 sshd[5474]: Connection closed by 36.67.154.57 [preauth]
+Nov 19 00:59:35 mhn-honeypot-6 sshd[5478]: Invalid user vncuser from 181.50.99.37
+Nov 19 00:59:35 mhn-honeypot-6 sshd[5478]: input_userauth_request: invalid user vncuser [preauth]
+Nov 19 00:59:35 mhn-honeypot-6 sshd[5478]: Connection closed by 181.50.99.37 [preauth]
+Nov 19 01:05:17 mhn-honeypot-6 sshd[5494]: Connection closed by 46.188.16.55 [preauth]
+Nov 19 01:05:37 mhn-honeypot-6 sshd[5496]: Invalid user gerrit2 from 2.95.126.43
+Nov 19 01:05:37 mhn-honeypot-6 sshd[5496]: input_userauth_request: invalid user gerrit2 [preauth]
+Nov 19 01:05:37 mhn-honeypot-6 sshd[5496]: Connection closed by 2.95.126.43 [preauth]
+Nov 19 01:05:57 mhn-honeypot-6 sshd[5498]: Connection closed by 46.188.16.55 [preauth]
+Nov 19 01:06:31 mhn-honeypot-6 sshd[5503]: Invalid user wpyan from 178.155.249.205
+Nov 19 01:06:31 mhn-honeypot-6 sshd[5503]: input_userauth_request: invalid user wpyan [preauth]
+Nov 19 01:06:31 mhn-honeypot-6 sshd[5503]: Connection closed by 178.155.249.205 [preauth]
+Nov 19 01:06:31 mhn-honeypot-6 sshd[5501]: Invalid user bounce from 188.165.211.201
+Nov 19 01:06:31 mhn-honeypot-6 sshd[5501]: input_userauth_request: invalid user bounce [preauth]
+Nov 19 01:06:31 mhn-honeypot-6 sshd[5501]: Connection closed by 188.165.211.201 [preauth]
+Nov 19 01:08:51 mhn-honeypot-6 sshd[5507]: Invalid user lydie from 178.155.249.205
+Nov 19 01:08:51 mhn-honeypot-6 sshd[5507]: input_userauth_request: invalid user lydie [preauth]
+Nov 19 01:08:51 mhn-honeypot-6 sshd[5507]: Connection closed by 178.155.249.205 [preauth]
+Nov 19 01:17:01 mhn-honeypot-6 CRON[5514]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 19 01:17:01 mhn-honeypot-6 CRON[5514]: pam_unix(cron:session): session closed for user root
+Nov 19 01:18:37 mhn-honeypot-6 sshd[5518]: Invalid user support from 91.121.101.159
+Nov 19 01:18:37 mhn-honeypot-6 sshd[5518]: input_userauth_request: invalid user support [preauth]
+Nov 19 01:18:37 mhn-honeypot-6 sshd[5518]: Connection closed by 91.121.101.159 [preauth]
+Nov 19 01:21:42 mhn-honeypot-6 sshd[5522]: Invalid user mapr from 77.231.66.164
+Nov 19 01:21:42 mhn-honeypot-6 sshd[5522]: input_userauth_request: invalid user mapr [preauth]
+Nov 19 01:21:42 mhn-honeypot-6 sshd[5522]: Connection closed by 77.231.66.164 [preauth]
+Nov 19 01:23:34 mhn-honeypot-6 sshd[5526]: Connection closed by 77.231.66.164 [preauth]
+Nov 19 01:35:12 mhn-honeypot-6 sshd[5546]: Connection closed by 45.55.254.13 [preauth]
+Nov 19 01:40:05 mhn-honeypot-6 sshd[5551]: Invalid user test from 45.55.254.13
+Nov 19 01:40:05 mhn-honeypot-6 sshd[5551]: input_userauth_request: invalid user test [preauth]
+Nov 19 01:40:05 mhn-honeypot-6 sshd[5551]: Connection closed by 45.55.254.13 [preauth]
+Nov 19 01:40:35 mhn-honeypot-6 sshd[5554]: Invalid user pi from 36.67.154.57
+Nov 19 01:40:35 mhn-honeypot-6 sshd[5554]: input_userauth_request: invalid user pi [preauth]
+Nov 19 01:40:35 mhn-honeypot-6 sshd[5554]: Connection closed by 36.67.154.57 [preauth]
+Nov 19 01:49:34 mhn-honeypot-6 sshd[5562]: Connection closed by 37.187.114.136 [preauth]
+Nov 19 01:50:40 mhn-honeypot-6 sshd[5565]: Invalid user user5 from 152.249.68.53
+Nov 19 01:50:40 mhn-honeypot-6 sshd[5565]: input_userauth_request: invalid user user5 [preauth]
+Nov 19 01:50:41 mhn-honeypot-6 sshd[5565]: Connection closed by 152.249.68.53 [preauth]
+Nov 19 01:50:51 mhn-honeypot-6 sshd[5577]: Invalid user cuisine from 188.165.211.201
+Nov 19 01:50:51 mhn-honeypot-6 sshd[5577]: input_userauth_request: invalid user cuisine [preauth]
+Nov 19 01:50:51 mhn-honeypot-6 sshd[5577]: Connection closed by 188.165.211.201 [preauth]
+Nov 19 01:50:53 mhn-honeypot-6 sshd[5579]: Invalid user samba from 91.121.101.159
+Nov 19 01:50:53 mhn-honeypot-6 sshd[5579]: input_userauth_request: invalid user samba [preauth]
+Nov 19 01:50:53 mhn-honeypot-6 sshd[5579]: Connection closed by 91.121.101.159 [preauth]
+Nov 19 01:52:07 mhn-honeypot-6 sshd[5582]: Invalid user magalie from 188.165.211.201
+Nov 19 01:52:07 mhn-honeypot-6 sshd[5582]: input_userauth_request: invalid user magalie [preauth]
+Nov 19 01:52:07 mhn-honeypot-6 sshd[5582]: Connection closed by 188.165.211.201 [preauth]
+Nov 19 01:52:20 mhn-honeypot-6 sshd[5584]: Connection closed by 51.38.50.239 [preauth]
+Nov 19 01:53:10 mhn-honeypot-6 sshd[5586]: Connection closed by 51.38.50.239 [preauth]
+Nov 19 01:54:03 mhn-honeypot-6 sshd[5589]: Invalid user daniel from 41.221.98.158
+Nov 19 01:54:03 mhn-honeypot-6 sshd[5589]: input_userauth_request: invalid user daniel [preauth]
+Nov 19 01:54:04 mhn-honeypot-6 sshd[5589]: Connection closed by 41.221.98.158 [preauth]
+Nov 19 01:59:07 mhn-honeypot-6 sshd[5595]: Connection closed by 94.140.226.177 [preauth]
+Nov 19 01:59:07 mhn-honeypot-6 sshd[5597]: Connection closed by 94.140.226.177 [preauth]
+Nov 19 02:01:25 mhn-honeypot-6 sshd[5600]: Invalid user wpyan from 186.28.255.235
+Nov 19 02:01:25 mhn-honeypot-6 sshd[5600]: input_userauth_request: invalid user wpyan [preauth]
+Nov 19 02:01:25 mhn-honeypot-6 sshd[5600]: Connection closed by 186.28.255.235 [preauth]
+Nov 19 02:04:07 mhn-honeypot-6 sshd[5604]: Invalid user admin from 51.68.188.48
+Nov 19 02:04:07 mhn-honeypot-6 sshd[5604]: input_userauth_request: invalid user admin [preauth]
+Nov 19 02:04:07 mhn-honeypot-6 sshd[5604]: Connection closed by 51.68.188.48 [preauth]
+Nov 19 02:09:18 mhn-honeypot-6 sshd[5610]: Invalid user gdm from 213.230.99.192
+Nov 19 02:09:18 mhn-honeypot-6 sshd[5610]: input_userauth_request: invalid user gdm [preauth]
+Nov 19 02:09:18 mhn-honeypot-6 sshd[5610]: Connection closed by 213.230.99.192 [preauth]
+Nov 19 02:10:03 mhn-honeypot-6 sshd[5612]: Connection closed by 46.188.16.55 [preauth]
+Nov 19 02:10:51 mhn-honeypot-6 sshd[5615]: Connection closed by 46.188.16.55 [preauth]
+Nov 19 02:15:31 mhn-honeypot-6 sshd[5620]: Connection closed by 103.242.110.45 [preauth]
+Nov 19 02:17:01 mhn-honeypot-6 CRON[5633]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 19 02:17:01 mhn-honeypot-6 CRON[5633]: pam_unix(cron:session): session closed for user root
+Nov 19 02:18:59 mhn-honeypot-6 sshd[5637]: Connection closed by 51.75.195.118 [preauth]
+Nov 19 02:19:01 mhn-honeypot-6 sshd[5639]: Connection closed by 51.75.195.118 [preauth]
+Nov 19 02:19:37 mhn-honeypot-6 sshd[5642]: Invalid user arkserver from 41.216.228.158
+Nov 19 02:19:37 mhn-honeypot-6 sshd[5642]: input_userauth_request: invalid user arkserver [preauth]
+Nov 19 02:19:37 mhn-honeypot-6 sshd[5642]: Connection closed by 41.216.228.158 [preauth]
+Nov 19 02:20:47 mhn-honeypot-6 sshd[5645]: Invalid user vagrant from 193.164.108.28
+Nov 19 02:20:47 mhn-honeypot-6 sshd[5645]: input_userauth_request: invalid user vagrant [preauth]
+Nov 19 02:20:47 mhn-honeypot-6 sshd[5647]: Invalid user vagrant from 193.164.108.28
+Nov 19 02:20:47 mhn-honeypot-6 sshd[5647]: input_userauth_request: invalid user vagrant [preauth]
+Nov 19 02:20:47 mhn-honeypot-6 sshd[5645]: Connection closed by 193.164.108.28 [preauth]
+Nov 19 02:20:47 mhn-honeypot-6 sshd[5647]: Connection closed by 193.164.108.28 [preauth]
+Nov 19 02:23:06 mhn-honeypot-6 sshd[5650]: Invalid user ircbot from 91.121.101.159
+Nov 19 02:23:06 mhn-honeypot-6 sshd[5650]: input_userauth_request: invalid user ircbot [preauth]
+Nov 19 02:23:06 mhn-honeypot-6 sshd[5650]: Connection closed by 91.121.101.159 [preauth]
+Nov 19 02:24:57 mhn-honeypot-6 sshd[5654]: Invalid user apagar from 36.67.154.57
+Nov 19 02:24:57 mhn-honeypot-6 sshd[5654]: input_userauth_request: invalid user apagar [preauth]
+Nov 19 02:24:57 mhn-honeypot-6 sshd[5654]: Connection closed by 36.67.154.57 [preauth]
+Nov 19 02:32:29 mhn-honeypot-6 sshd[5661]: Invalid user demo from 213.230.99.192
+Nov 19 02:32:29 mhn-honeypot-6 sshd[5661]: input_userauth_request: invalid user demo [preauth]
+Nov 19 02:32:29 mhn-honeypot-6 sshd[5661]: Connection closed by 213.230.99.192 [preauth]
+Nov 19 02:36:15 mhn-honeypot-6 sshd[5665]: Invalid user chiradip from 188.165.211.201
+Nov 19 02:36:15 mhn-honeypot-6 sshd[5665]: input_userauth_request: invalid user chiradip [preauth]
+Nov 19 02:36:15 mhn-honeypot-6 sshd[5665]: Connection closed by 188.165.211.201 [preauth]
+Nov 19 02:37:32 mhn-honeypot-6 sshd[5668]: Invalid user unity from 188.165.211.201
+Nov 19 02:37:32 mhn-honeypot-6 sshd[5668]: input_userauth_request: invalid user unity [preauth]
+Nov 19 02:37:32 mhn-honeypot-6 sshd[5668]: Connection closed by 188.165.211.201 [preauth]
+Nov 19 02:37:34 mhn-honeypot-6 sshd[5670]: Invalid user groupoffice from 78.94.36.59
+Nov 19 02:37:34 mhn-honeypot-6 sshd[5670]: input_userauth_request: invalid user groupoffice [preauth]
+Nov 19 02:37:34 mhn-honeypot-6 sshd[5670]: Connection closed by 78.94.36.59 [preauth]
+Nov 19 02:37:35 mhn-honeypot-6 sshd[5672]: Invalid user groupoffice from 78.94.36.59
+Nov 19 02:37:35 mhn-honeypot-6 sshd[5672]: input_userauth_request: invalid user groupoffice [preauth]
+Nov 19 02:37:35 mhn-honeypot-6 sshd[5672]: Connection closed by 78.94.36.59 [preauth]
+Nov 19 02:40:35 mhn-honeypot-6 sshd[5676]: Invalid user robin from 190.153.178.46
+Nov 19 02:40:35 mhn-honeypot-6 sshd[5676]: input_userauth_request: invalid user robin [preauth]
+Nov 19 02:40:35 mhn-honeypot-6 sshd[5676]: Connection closed by 190.153.178.46 [preauth]
+Nov 19 02:40:35 mhn-honeypot-6 sshd[5678]: Invalid user robin from 190.153.178.46
+Nov 19 02:40:35 mhn-honeypot-6 sshd[5678]: input_userauth_request: invalid user robin [preauth]
+Nov 19 02:40:35 mhn-honeypot-6 sshd[5678]: Connection closed by 190.153.178.46 [preauth]
+Nov 19 02:40:59 mhn-honeypot-6 sshd[5681]: Received disconnect from 209.141.62.36: 11: Bye Bye [preauth]
+Nov 19 02:41:00 mhn-honeypot-6 sshd[5683]: Received disconnect from 209.141.62.36: 11: Bye Bye [preauth]
+Nov 19 02:41:00 mhn-honeypot-6 sshd[5685]: Received disconnect from 209.141.62.36: 11: Bye Bye [preauth]
+Nov 19 02:41:01 mhn-honeypot-6 sshd[5687]: Invalid user admin from 209.141.62.36
+Nov 19 02:41:01 mhn-honeypot-6 sshd[5687]: input_userauth_request: invalid user admin [preauth]
+Nov 19 02:41:01 mhn-honeypot-6 sshd[5687]: Received disconnect from 209.141.62.36: 11: Bye Bye [preauth]
+Nov 19 02:41:01 mhn-honeypot-6 sshd[5689]: Invalid user admin from 209.141.62.36
+Nov 19 02:41:01 mhn-honeypot-6 sshd[5689]: input_userauth_request: invalid user admin [preauth]
+Nov 19 02:41:01 mhn-honeypot-6 sshd[5689]: Received disconnect from 209.141.62.36: 11: Bye Bye [preauth]
+Nov 19 02:41:02 mhn-honeypot-6 sshd[5691]: Invalid user pi from 209.141.62.36
+Nov 19 02:41:02 mhn-honeypot-6 sshd[5691]: input_userauth_request: invalid user pi [preauth]
+Nov 19 02:41:02 mhn-honeypot-6 sshd[5691]: Received disconnect from 209.141.62.36: 11: Bye Bye [preauth]
+Nov 19 02:41:02 mhn-honeypot-6 sshd[5693]: Invalid user support from 209.141.62.36
+Nov 19 02:41:02 mhn-honeypot-6 sshd[5693]: input_userauth_request: invalid user support [preauth]
+Nov 19 02:41:02 mhn-honeypot-6 sshguard[1571]: Blocking 209.141.62.36:4 for >945secs: 40 danger in 4 attacks over 1 seconds (all: 80d in 2 abuses over 85703s).
+Nov 19 02:46:07 mhn-honeypot-6 sshd[5709]: Invalid user asterisk from 72.38.90.230
+Nov 19 02:46:07 mhn-honeypot-6 sshd[5709]: input_userauth_request: invalid user asterisk [preauth]
+Nov 19 02:46:07 mhn-honeypot-6 sshd[5709]: Connection closed by 72.38.90.230 [preauth]
+Nov 19 02:46:07 mhn-honeypot-6 sshd[5711]: Invalid user asterisk from 72.38.90.230
+Nov 19 02:46:07 mhn-honeypot-6 sshd[5711]: input_userauth_request: invalid user asterisk [preauth]
+Nov 19 02:46:07 mhn-honeypot-6 sshd[5711]: Connection closed by 72.38.90.230 [preauth]
+Nov 19 02:52:32 mhn-honeypot-6 sshd[5718]: Invalid user geronimo from 121.67.246.139
+Nov 19 02:52:32 mhn-honeypot-6 sshd[5718]: input_userauth_request: invalid user geronimo [preauth]
+Nov 19 02:52:32 mhn-honeypot-6 sshd[5718]: Connection closed by 121.67.246.139 [preauth]
+Nov 19 02:55:38 mhn-honeypot-6 sshd[5722]: Invalid user charmant from 213.230.99.192
+Nov 19 02:55:38 mhn-honeypot-6 sshd[5722]: input_userauth_request: invalid user charmant [preauth]
+Nov 19 02:55:39 mhn-honeypot-6 sshd[5722]: Connection closed by 213.230.99.192 [preauth]
+Nov 19 03:00:19 mhn-honeypot-6 sshd[5728]: Connection closed by 206.189.232.29 [preauth]
+Nov 19 03:01:19 mhn-honeypot-6 sshd[5731]: Invalid user test from 5.51.171.160
+Nov 19 03:01:19 mhn-honeypot-6 sshd[5731]: input_userauth_request: invalid user test [preauth]
+Nov 19 03:01:19 mhn-honeypot-6 sshd[5731]: Connection closed by 5.51.171.160 [preauth]
+Nov 19 03:01:32 mhn-honeypot-6 sshd[5733]: Invalid user test from 5.51.171.160
+Nov 19 03:01:32 mhn-honeypot-6 sshd[5733]: input_userauth_request: invalid user test [preauth]
+Nov 19 03:01:33 mhn-honeypot-6 sshd[5733]: Connection closed by 5.51.171.160 [preauth]
+Nov 19 03:03:25 mhn-honeypot-6 sshd[5736]: Invalid user test2 from 178.128.25.222
+Nov 19 03:03:25 mhn-honeypot-6 sshd[5736]: input_userauth_request: invalid user test2 [preauth]
+Nov 19 03:03:25 mhn-honeypot-6 sshd[5736]: Connection closed by 178.128.25.222 [preauth]
+Nov 19 03:05:12 mhn-honeypot-6 sshd[5740]: Invalid user butter from 117.34.107.50
+Nov 19 03:05:12 mhn-honeypot-6 sshd[5740]: input_userauth_request: invalid user butter [preauth]
+Nov 19 03:05:13 mhn-honeypot-6 sshd[5740]: Connection closed by 117.34.107.50 [preauth]
+Nov 19 03:09:36 mhn-honeypot-6 sshd[5745]: Invalid user rails from 72.38.90.230
+Nov 19 03:09:36 mhn-honeypot-6 sshd[5745]: input_userauth_request: invalid user rails [preauth]
+Nov 19 03:09:36 mhn-honeypot-6 sshd[5745]: Connection closed by 72.38.90.230 [preauth]
+Nov 19 03:09:36 mhn-honeypot-6 sshd[5747]: Invalid user rails from 72.38.90.230
+Nov 19 03:09:36 mhn-honeypot-6 sshd[5747]: input_userauth_request: invalid user rails [preauth]
+Nov 19 03:09:36 mhn-honeypot-6 sshd[5747]: Connection closed by 72.38.90.230 [preauth]
+Nov 19 03:11:22 mhn-honeypot-6 sshd[5760]: Connection closed by 159.65.133.210 [preauth]
+Nov 19 03:11:22 mhn-honeypot-6 sshd[5762]: Connection closed by 159.65.133.210 [preauth]
+Nov 19 03:11:42 mhn-honeypot-6 sshd[5764]: Invalid user braxton from 190.153.178.46
+Nov 19 03:11:42 mhn-honeypot-6 sshd[5764]: input_userauth_request: invalid user braxton [preauth]
+Nov 19 03:11:42 mhn-honeypot-6 sshd[5766]: Invalid user braxton from 190.153.178.46
+Nov 19 03:11:42 mhn-honeypot-6 sshd[5766]: input_userauth_request: invalid user braxton [preauth]
+Nov 19 03:11:42 mhn-honeypot-6 sshd[5764]: Connection closed by 190.153.178.46 [preauth]
+Nov 19 03:11:42 mhn-honeypot-6 sshd[5766]: Connection closed by 190.153.178.46 [preauth]
+Nov 19 03:14:25 mhn-honeypot-6 sshd[5770]: Invalid user jboss from 2.95.126.43
+Nov 19 03:14:25 mhn-honeypot-6 sshd[5770]: input_userauth_request: invalid user jboss [preauth]
+Nov 19 03:14:26 mhn-honeypot-6 sshd[5770]: Connection closed by 2.95.126.43 [preauth]
+Nov 19 03:17:01 mhn-honeypot-6 CRON[5774]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 19 03:17:01 mhn-honeypot-6 CRON[5774]: pam_unix(cron:session): session closed for user root
+Nov 19 03:17:52 mhn-honeypot-6 sshd[5777]: Invalid user finik from 78.94.36.59
+Nov 19 03:17:52 mhn-honeypot-6 sshd[5777]: input_userauth_request: invalid user finik [preauth]
+Nov 19 03:17:52 mhn-honeypot-6 sshd[5777]: Connection closed by 78.94.36.59 [preauth]
+Nov 19 03:17:54 mhn-honeypot-6 sshd[5780]: Invalid user finik from 78.94.36.59
+Nov 19 03:17:54 mhn-honeypot-6 sshd[5780]: input_userauth_request: invalid user finik [preauth]
+Nov 19 03:17:55 mhn-honeypot-6 sshd[5780]: Connection closed by 78.94.36.59 [preauth]
+Nov 19 03:27:51 mhn-honeypot-6 sshd[5788]: Invalid user programmer from 5.51.171.160
+Nov 19 03:27:51 mhn-honeypot-6 sshd[5788]: input_userauth_request: invalid user programmer [preauth]
+Nov 19 03:27:51 mhn-honeypot-6 sshd[5788]: Connection closed by 5.51.171.160 [preauth]
+Nov 19 03:27:54 mhn-honeypot-6 sshd[5791]: Invalid user programmer from 5.51.171.160
+Nov 19 03:27:54 mhn-honeypot-6 sshd[5791]: input_userauth_request: invalid user programmer [preauth]
+Nov 19 03:27:54 mhn-honeypot-6 sshd[5791]: Connection closed by 5.51.171.160 [preauth]
+Nov 19 03:31:28 mhn-honeypot-6 sshd[5795]: Invalid user spa from 121.67.246.139
+Nov 19 03:31:28 mhn-honeypot-6 sshd[5795]: input_userauth_request: invalid user spa [preauth]
+Nov 19 03:31:28 mhn-honeypot-6 sshd[5795]: Connection closed by 121.67.246.139 [preauth]
+Nov 19 03:32:51 mhn-honeypot-6 sshd[5798]: Invalid user abigail from 72.38.90.230
+Nov 19 03:32:51 mhn-honeypot-6 sshd[5798]: input_userauth_request: invalid user abigail [preauth]
+Nov 19 03:32:51 mhn-honeypot-6 sshd[5798]: Connection closed by 72.38.90.230 [preauth]
+Nov 19 03:32:51 mhn-honeypot-6 sshd[5800]: Invalid user abigail from 72.38.90.230
+Nov 19 03:32:51 mhn-honeypot-6 sshd[5800]: input_userauth_request: invalid user abigail [preauth]
+Nov 19 03:32:51 mhn-honeypot-6 sshd[5800]: Connection closed by 72.38.90.230 [preauth]
+Nov 19 03:34:18 mhn-honeypot-6 sshd[5803]: Invalid user vboxuser from 121.67.246.139
+Nov 19 03:34:18 mhn-honeypot-6 sshd[5803]: input_userauth_request: invalid user vboxuser [preauth]
+Nov 19 03:34:18 mhn-honeypot-6 sshd[5803]: Connection closed by 121.67.246.139 [preauth]
+Nov 19 03:37:27 mhn-honeypot-6 sshd[5817]: Connection closed by 147.135.211.106 [preauth]
+Nov 19 03:39:00 mhn-honeypot-6 sshd[5820]: Invalid user richardc from 85.234.34.92
+Nov 19 03:39:00 mhn-honeypot-6 sshd[5820]: input_userauth_request: invalid user richardc [preauth]
+Nov 19 03:39:01 mhn-honeypot-6 sshd[5820]: Connection closed by 85.234.34.92 [preauth]
+Nov 19 03:39:30 mhn-honeypot-6 sshd[5823]: Invalid user testuser from 142.93.220.142
+Nov 19 03:39:30 mhn-honeypot-6 sshd[5823]: input_userauth_request: invalid user testuser [preauth]
+Nov 19 03:39:31 mhn-honeypot-6 sshd[5823]: Connection closed by 142.93.220.142 [preauth]
+Nov 19 03:42:38 mhn-honeypot-6 sshd[5829]: Invalid user mac from 190.153.178.46
+Nov 19 03:42:38 mhn-honeypot-6 sshd[5829]: input_userauth_request: invalid user mac [preauth]
+Nov 19 03:42:38 mhn-honeypot-6 sshd[5829]: Connection closed by 190.153.178.46 [preauth]
+Nov 19 03:42:39 mhn-honeypot-6 sshd[5827]: Invalid user mac from 190.153.178.46
+Nov 19 03:42:39 mhn-honeypot-6 sshd[5827]: input_userauth_request: invalid user mac [preauth]
+Nov 19 03:42:39 mhn-honeypot-6 sshd[5827]: Connection closed by 190.153.178.46 [preauth]
+Nov 19 03:43:44 mhn-honeypot-6 sshd[5832]: Invalid user tomcat from 51.68.188.48
+Nov 19 03:43:44 mhn-honeypot-6 sshd[5832]: input_userauth_request: invalid user tomcat [preauth]
+Nov 19 03:43:44 mhn-honeypot-6 sshd[5832]: Connection closed by 51.68.188.48 [preauth]
+Nov 19 03:51:19 mhn-honeypot-6 sshd[5839]: Connection closed by 178.62.85.88 [preauth]
+Nov 19 03:51:20 mhn-honeypot-6 sshd[5841]: Connection closed by 178.62.85.88 [preauth]
+Nov 19 03:54:09 mhn-honeypot-6 sshd[5845]: Invalid user connie from 5.51.171.160
+Nov 19 03:54:09 mhn-honeypot-6 sshd[5845]: input_userauth_request: invalid user connie [preauth]
+Nov 19 03:54:09 mhn-honeypot-6 sshd[5845]: Connection closed by 5.51.171.160 [preauth]
+Nov 19 03:54:09 mhn-honeypot-6 sshd[5847]: Invalid user connie from 5.51.171.160
+Nov 19 03:54:09 mhn-honeypot-6 sshd[5847]: input_userauth_request: invalid user connie [preauth]
+Nov 19 03:54:10 mhn-honeypot-6 sshd[5847]: Connection closed by 5.51.171.160 [preauth]
+Nov 19 03:57:55 mhn-honeypot-6 sshd[5851]: Invalid user nagios from 200.141.223.80
+Nov 19 03:57:55 mhn-honeypot-6 sshd[5851]: input_userauth_request: invalid user nagios [preauth]
+Nov 19 03:57:55 mhn-honeypot-6 sshd[5851]: Connection closed by 200.141.223.80 [preauth]
+Nov 19 03:58:11 mhn-honeypot-6 sshd[5854]: Invalid user thierry from 78.94.36.59
+Nov 19 03:58:11 mhn-honeypot-6 sshd[5854]: input_userauth_request: invalid user thierry [preauth]
+Nov 19 03:58:11 mhn-honeypot-6 sshd[5854]: Connection closed by 78.94.36.59 [preauth]
+Nov 19 03:58:13 mhn-honeypot-6 sshd[5856]: Invalid user thierry from 78.94.36.59
+Nov 19 03:58:13 mhn-honeypot-6 sshd[5856]: input_userauth_request: invalid user thierry [preauth]
+Nov 19 03:58:13 mhn-honeypot-6 sshd[5856]: Connection closed by 78.94.36.59 [preauth]
+Nov 19 04:03:06 mhn-honeypot-6 sshd[5871]: Invalid user hiver from 193.164.108.28
+Nov 19 04:03:06 mhn-honeypot-6 sshd[5871]: input_userauth_request: invalid user hiver [preauth]
+Nov 19 04:03:06 mhn-honeypot-6 sshd[5871]: Connection closed by 193.164.108.28 [preauth]
+Nov 19 04:03:06 mhn-honeypot-6 sshd[5873]: Invalid user hiver from 193.164.108.28
+Nov 19 04:03:06 mhn-honeypot-6 sshd[5873]: input_userauth_request: invalid user hiver [preauth]
+Nov 19 04:03:06 mhn-honeypot-6 sshd[5873]: Connection closed by 193.164.108.28 [preauth]
+Nov 19 04:08:20 mhn-honeypot-6 sshd[5879]: Invalid user student7 from 128.199.227.87
+Nov 19 04:08:20 mhn-honeypot-6 sshd[5879]: input_userauth_request: invalid user student7 [preauth]
+Nov 19 04:08:20 mhn-honeypot-6 sshd[5879]: Connection closed by 128.199.227.87 [preauth]
+Nov 19 04:13:55 mhn-honeypot-6 sshd[5885]: Invalid user java from 121.67.246.139
+Nov 19 04:13:55 mhn-honeypot-6 sshd[5885]: input_userauth_request: invalid user java [preauth]
+Nov 19 04:13:55 mhn-honeypot-6 sshd[5885]: Connection closed by 121.67.246.139 [preauth]
+Nov 19 04:15:08 mhn-honeypot-6 sshd[5887]: Invalid user default from 121.67.246.139
+Nov 19 04:15:08 mhn-honeypot-6 sshd[5887]: input_userauth_request: invalid user default [preauth]
+Nov 19 04:15:08 mhn-honeypot-6 sshd[5887]: Connection closed by 121.67.246.139 [preauth]
+Nov 19 04:17:01 mhn-honeypot-6 CRON[5891]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 19 04:17:01 mhn-honeypot-6 CRON[5891]: pam_unix(cron:session): session closed for user root
+Nov 19 04:19:00 mhn-honeypot-6 sshd[5895]: Connection closed by 78.231.186.151 [preauth]
+Nov 19 04:24:02 mhn-honeypot-6 sshd[5901]: Invalid user friend from 85.234.34.92
+Nov 19 04:24:02 mhn-honeypot-6 sshd[5901]: input_userauth_request: invalid user friend [preauth]
+Nov 19 04:24:02 mhn-honeypot-6 sshd[5901]: Connection closed by 85.234.34.92 [preauth]
+Nov 19 04:26:19 mhn-honeypot-6 sshd[5904]: Invalid user marcus from 85.234.34.92
+Nov 19 04:26:19 mhn-honeypot-6 sshd[5904]: input_userauth_request: invalid user marcus [preauth]
+Nov 19 04:26:20 mhn-honeypot-6 sshd[5904]: Connection closed by 85.234.34.92 [preauth]
+Nov 19 04:27:57 mhn-honeypot-6 sshd[5917]: Invalid user feroci from 131.100.219.3
+Nov 19 04:27:57 mhn-honeypot-6 sshd[5917]: input_userauth_request: invalid user feroci [preauth]
+Nov 19 04:27:58 mhn-honeypot-6 sshd[5917]: Connection closed by 131.100.219.3 [preauth]
+Nov 19 04:37:34 mhn-honeypot-6 sshd[5926]: Connection closed by 175.215.62.185 [preauth]
+Nov 19 04:45:40 mhn-honeypot-6 sshd[5934]: Connection closed by 109.75.216.201 [preauth]
+Nov 19 04:47:12 mhn-honeypot-6 sshd[5937]: Invalid user samuel from 200.141.223.80
+Nov 19 04:47:12 mhn-honeypot-6 sshd[5937]: input_userauth_request: invalid user samuel [preauth]
+Nov 19 04:47:12 mhn-honeypot-6 sshd[5937]: Connection closed by 200.141.223.80 [preauth]
+Nov 19 04:49:48 mhn-honeypot-6 sshd[5941]: Invalid user vcoadmin from 191.8.190.32
+Nov 19 04:49:48 mhn-honeypot-6 sshd[5941]: input_userauth_request: invalid user vcoadmin [preauth]
+Nov 19 04:49:49 mhn-honeypot-6 sshd[5941]: Connection closed by 191.8.190.32 [preauth]
+Nov 19 04:49:49 mhn-honeypot-6 sshd[5943]: Invalid user vcoadmin from 191.8.190.32
+Nov 19 04:49:49 mhn-honeypot-6 sshd[5943]: input_userauth_request: invalid user vcoadmin [preauth]
+Nov 19 04:49:49 mhn-honeypot-6 sshd[5943]: Connection closed by 191.8.190.32 [preauth]
+Nov 19 04:56:07 mhn-honeypot-6 sshd[5959]: Invalid user jwgblog from 206.189.232.29
+Nov 19 04:56:07 mhn-honeypot-6 sshd[5959]: input_userauth_request: invalid user jwgblog [preauth]
+Nov 19 04:56:07 mhn-honeypot-6 sshd[5959]: Connection closed by 206.189.232.29 [preauth]
+Nov 19 04:57:08 mhn-honeypot-6 sshd[5962]: Connection closed by 206.189.232.29 [preauth]
+Nov 19 05:08:13 mhn-honeypot-6 sshd[5971]: Invalid user xiao from 153.19.40.20
+Nov 19 05:08:13 mhn-honeypot-6 sshd[5971]: input_userauth_request: invalid user xiao [preauth]
+Nov 19 05:08:13 mhn-honeypot-6 sshd[5971]: Connection closed by 153.19.40.20 [preauth]
+Nov 19 05:09:28 mhn-honeypot-6 sshd[5974]: Connection closed by 117.247.82.30 [preauth]
+Nov 19 05:11:18 mhn-honeypot-6 sshd[5978]: Invalid user praveen from 85.234.34.92
+Nov 19 05:11:18 mhn-honeypot-6 sshd[5978]: input_userauth_request: invalid user praveen [preauth]
+Nov 19 05:11:18 mhn-honeypot-6 sshd[5978]: Connection closed by 85.234.34.92 [preauth]
+Nov 19 05:13:29 mhn-honeypot-6 sshd[5981]: Invalid user tentation from 85.234.34.92
+Nov 19 05:13:29 mhn-honeypot-6 sshd[5981]: input_userauth_request: invalid user tentation [preauth]
+Nov 19 05:13:30 mhn-honeypot-6 sshd[5981]: Connection closed by 85.234.34.92 [preauth]
+Nov 19 05:17:01 mhn-honeypot-6 CRON[5996]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 19 05:17:01 mhn-honeypot-6 CRON[5996]: pam_unix(cron:session): session closed for user root
+Nov 19 05:23:02 mhn-honeypot-6 sshd[6003]: Connection closed by 51.68.188.48 [preauth]
+Nov 19 05:30:25 mhn-honeypot-6 sshd[6010]: Connection closed by 175.215.62.185 [preauth]
+Nov 19 05:35:46 mhn-honeypot-6 sshd[6016]: Invalid user admin from 200.141.223.80
+Nov 19 05:35:46 mhn-honeypot-6 sshd[6016]: input_userauth_request: invalid user admin [preauth]
+Nov 19 05:35:47 mhn-honeypot-6 sshd[6016]: Connection closed by 200.141.223.80 [preauth]
+Nov 19 05:40:39 mhn-honeypot-6 sshd[6031]: Invalid user postgres from 131.100.219.3
+Nov 19 05:40:39 mhn-honeypot-6 sshd[6031]: input_userauth_request: invalid user postgres [preauth]
+Nov 19 05:40:39 mhn-honeypot-6 sshd[6031]: Connection closed by 131.100.219.3 [preauth]
+Nov 19 05:42:47 mhn-honeypot-6 sshd[6037]: Connection closed by 94.140.226.177 [preauth]
+Nov 19 05:42:53 mhn-honeypot-6 sshd[6035]: Connection closed by 94.140.226.177 [preauth]
+Nov 19 05:44:55 mhn-honeypot-6 sshd[6040]: Invalid user user from 193.164.108.28
+Nov 19 05:44:55 mhn-honeypot-6 sshd[6040]: input_userauth_request: invalid user user [preauth]
+Nov 19 05:44:55 mhn-honeypot-6 sshd[6040]: Connection closed by 193.164.108.28 [preauth]
+Nov 19 05:44:55 mhn-honeypot-6 sshd[6042]: Invalid user user from 193.164.108.28
+Nov 19 05:44:55 mhn-honeypot-6 sshd[6042]: input_userauth_request: invalid user user [preauth]
+Nov 19 05:44:55 mhn-honeypot-6 sshd[6042]: Connection closed by 193.164.108.28 [preauth]
+Nov 19 05:46:01 mhn-honeypot-6 sshd[6045]: Invalid user tomcat from 159.226.20.83
+Nov 19 05:46:01 mhn-honeypot-6 sshd[6045]: input_userauth_request: invalid user tomcat [preauth]
+Nov 19 05:46:01 mhn-honeypot-6 sshd[6045]: Connection closed by 159.226.20.83 [preauth]
+Nov 19 05:58:43 mhn-honeypot-6 sshd[6056]: Connection closed by 178.62.85.88 [preauth]
+Nov 19 05:58:43 mhn-honeypot-6 sshd[6058]: Connection closed by 178.62.85.88 [preauth]
+Nov 19 06:00:34 mhn-honeypot-6 sshd[6061]: Invalid user pruebas from 191.177.203.149
+Nov 19 06:00:34 mhn-honeypot-6 sshd[6061]: input_userauth_request: invalid user pruebas [preauth]
+Nov 19 06:00:34 mhn-honeypot-6 sshd[6061]: Connection closed by 191.177.203.149 [preauth]
+Nov 19 06:02:00 mhn-honeypot-6 sshd[6064]: Invalid user careme from 128.199.227.87
+Nov 19 06:02:00 mhn-honeypot-6 sshd[6064]: input_userauth_request: invalid user careme [preauth]
+Nov 19 06:02:01 mhn-honeypot-6 sshd[6064]: Connection closed by 128.199.227.87 [preauth]
+Nov 19 06:08:15 mhn-honeypot-6 sshd[6080]: Invalid user guest from 191.8.190.32
+Nov 19 06:08:15 mhn-honeypot-6 sshd[6080]: input_userauth_request: invalid user guest [preauth]
+Nov 19 06:08:15 mhn-honeypot-6 sshd[6082]: Invalid user guest from 191.8.190.32
+Nov 19 06:08:15 mhn-honeypot-6 sshd[6082]: input_userauth_request: invalid user guest [preauth]
+Nov 19 06:08:15 mhn-honeypot-6 sshd[6080]: Connection closed by 191.8.190.32 [preauth]
+Nov 19 06:08:15 mhn-honeypot-6 sshd[6082]: Connection closed by 191.8.190.32 [preauth]
+Nov 19 06:12:25 mhn-honeypot-6 sshd[6087]: Connection closed by 104.236.133.193 [preauth]
+Nov 19 06:17:01 mhn-honeypot-6 CRON[6092]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 19 06:17:01 mhn-honeypot-6 CRON[6092]: pam_unix(cron:session): session closed for user root
+Nov 19 06:23:00 mhn-honeypot-6 sshd[6100]: Connection closed by 175.215.62.185 [preauth]
+Nov 19 06:24:57 mhn-honeypot-6 sshd[6103]: Invalid user ruben from 153.19.40.20
+Nov 19 06:24:57 mhn-honeypot-6 sshd[6103]: input_userauth_request: invalid user ruben [preauth]
+Nov 19 06:24:57 mhn-honeypot-6 sshd[6103]: Connection closed by 153.19.40.20 [preauth]
+Nov 19 06:25:01 mhn-honeypot-6 CRON[6105]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 19 06:27:12 mhn-honeypot-6 sshd[6158]: Invalid user admin from 191.177.203.149
+Nov 19 06:27:12 mhn-honeypot-6 sshd[6158]: input_userauth_request: invalid user admin [preauth]
+Nov 19 06:27:12 mhn-honeypot-6 sshd[6158]: Connection closed by 191.177.203.149 [preauth]
+Nov 19 06:30:02 mhn-honeypot-6 sshd[6162]: Invalid user random from 153.19.40.20
+Nov 19 06:30:02 mhn-honeypot-6 sshd[6162]: input_userauth_request: invalid user random [preauth]
+Nov 19 06:30:02 mhn-honeypot-6 sshd[6162]: Connection closed by 153.19.40.20 [preauth]
+Nov 19 06:31:09 mhn-honeypot-6 sshd[6164]: Connection closed by 78.231.186.151 [preauth]
+Nov 19 06:37:22 mhn-honeypot-6 sshd[6173]: Invalid user rails from 78.231.186.151
+Nov 19 06:37:22 mhn-honeypot-6 sshd[6173]: input_userauth_request: invalid user rails [preauth]
+Nov 19 06:37:22 mhn-honeypot-6 sshd[6173]: Connection closed by 78.231.186.151 [preauth]
+Nov 19 06:37:22 mhn-honeypot-6 sshd[6171]: Connection closed by 71.196.10.33 [preauth]
+Nov 19 06:42:34 mhn-honeypot-6 sshd[6178]: Connection closed by 71.196.10.33 [preauth]
+Nov 19 06:44:39 mhn-honeypot-6 CRON[6105]: pam_unix(cron:session): session closed for user root
+Nov 19 06:49:51 mhn-honeypot-6 sshd[6347]: Invalid user a from 113.204.66.138
+Nov 19 06:49:51 mhn-honeypot-6 sshd[6347]: input_userauth_request: invalid user a [preauth]
+Nov 19 06:49:52 mhn-honeypot-6 sshd[6347]: Connection closed by 113.204.66.138 [preauth]
+Nov 19 06:51:43 mhn-honeypot-6 sshd[6361]: Connection closed by 206.189.232.29 [preauth]
+Nov 19 06:53:08 mhn-honeypot-6 sshd[6364]: Accepted publickey for fury from 24.155.24.53 port 52131 ssh2: RSA 6b:0b:3e:0c:81:dc:56:32:38:7d:fc:57:fc:4b:20:55
+Nov 19 06:53:08 mhn-honeypot-6 sshd[6364]: pam_unix(sshd:session): session opened for user fury by (uid=0)
+Nov 19 06:53:50 mhn-honeypot-6 sshd[6489]: Invalid user public_html from 191.177.203.149
+Nov 19 06:53:50 mhn-honeypot-6 sshd[6489]: input_userauth_request: invalid user public_html [preauth]
+Nov 19 06:53:50 mhn-honeypot-6 sshd[6489]: Connection closed by 191.177.203.149 [preauth]
+Nov 19 06:54:08 mhn-honeypot-6 sudo:     fury : TTY=pts/0 ; PWD=/var/log ; USER=root ; COMMAND=/usr/bin/find /bin /boot /dev /etc /home /initrd.img /lib /lib64 /lost+found /media /mnt /opt /proc /root /run /sbin /srv /sys /tmp /usr /var /vmlinuz -name conpot
+Nov 19 06:54:08 mhn-honeypot-6 sudo: pam_unix(sudo:session): session opened for user root by fury(uid=0)
+Nov 19 06:54:09 mhn-honeypot-6 sshd[6495]: Invalid user angus from 131.100.219.3
+Nov 19 06:54:09 mhn-honeypot-6 sshd[6495]: input_userauth_request: invalid user angus [preauth]
+Nov 19 06:54:10 mhn-honeypot-6 sshd[6495]: Connection closed by 131.100.219.3 [preauth]
+Nov 19 06:54:11 mhn-honeypot-6 sudo: pam_unix(sudo:session): session closed for user root
+Nov 19 06:54:17 mhn-honeypot-6 sshd[6499]: Connection closed by 206.189.232.29 [preauth]
+Nov 19 06:54:42 mhn-honeypot-6 sudo:     fury : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/find /opt/conpot/env -name log
+Nov 19 06:54:42 mhn-honeypot-6 sudo: pam_unix(sudo:session): session opened for user root by fury(uid=0)
+Nov 19 06:54:42 mhn-honeypot-6 sudo: pam_unix(sudo:session): session closed for user root
+Nov 19 06:54:47 mhn-honeypot-6 sudo:     fury : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/find /opt/conpot/env -name auth
+Nov 19 06:54:47 mhn-honeypot-6 sudo: pam_unix(sudo:session): session opened for user root by fury(uid=0)
+Nov 19 06:54:47 mhn-honeypot-6 sudo: pam_unix(sudo:session): session closed for user root
+Nov 19 06:54:54 mhn-honeypot-6 sudo:     fury : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/find /opt/conpot/env -name lib
+Nov 19 06:54:54 mhn-honeypot-6 sudo: pam_unix(sudo:session): session opened for user root by fury(uid=0)
+Nov 19 06:54:54 mhn-honeypot-6 sudo: pam_unix(sudo:session): session closed for user root
+Nov 19 06:55:46 mhn-honeypot-6 sshd[6463]: Received disconnect from 24.155.24.53: 11: disconnected by user
+Nov 19 06:55:46 mhn-honeypot-6 sshd[6364]: pam_unix(sshd:session): session closed for user fury
+Nov 19 06:56:26 mhn-honeypot-6 sshd[6532]: Accepted publickey for root from 24.155.24.53 port 52153 ssh2: RSA 6b:0b:3e:0c:81:dc:56:32:38:7d:fc:57:fc:4b:20:55
+Nov 19 06:56:26 mhn-honeypot-6 sshd[6532]: pam_unix(sshd:session): session opened for user root by (uid=0)
