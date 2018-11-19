@@ -1,0 +1,694 @@
+[*] Loaded configuration file from /usr/share/sniper/sniper.conf [OK]
+[*] Saving loot to /usr/share/sniper/loot/35.226.222.200 [OK]
+[*] Checking for active internet connection [OK]
+                ____               
+    _________  /  _/___  ___  _____
+   / ___/ __ \ / // __ \/ _ \/ ___/
+  (__  ) / / // // /_/ /  __/ /    
+ /____/_/ /_/___/ .___/\___/_/     
+               /_/                 
+
+ + -- --=[http://xerosecurity.com
+ + -- --=[sniper v6.0 by 1N3
+ 
+     ./\.
+   ./    '\.
+   \.       '\.
+     '\.       '\.
+        '\.       '\.
+           '\.       '\.
+           ./           '\.
+         ./            ____'\.
+       ./                  <  '\.
+       \-------\            '>   '\.
+         '\=====>        ___<       '\.
+        ./-----/             __________'\.
+        \.------\       _____   ___(_)(_\."\
+          '\=====>          <            ./'
+         ./-----/            '>        ./
+         \.               ___<       ./
+           '\.                     ./
+              '\.                ./
+                 '\.           ./
+                 ./          ./
+               ./          ./  Carl Pilcher
+             ./          ./
+           ./          ./
+         ./          ./
+         \.        ./
+           '\.   ./
+              '\/
+
+ + -- --=[Launching stealth scan: 35.226.222.200 
+ 
+====================================================================================
+ GATHERING DNS INFO 
+====================================================================================
+dnsenum VERSION:1.2.4
+
+-----   35.226.222.200   -----
+
+
+Host's addresses:
+__________________
+
+
+
+Name Servers:
+______________
+
+
+====================================================================================
+ RUNNING TCP PORT SCAN 
+====================================================================================
+Starting Nmap 7.70 ( https://nmap.org ) at 2018-11-19 03:55 CST
+Nmap scan report for 200.222.226.35.bc.googleusercontent.com (35.226.222.200)
+Host is up (1.2s latency).
+Not shown: 258 closed ports, 204 filtered ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT      STATE SERVICE
+21/tcp    open  ftp
+22/tcp    open  ssh
+23/tcp    open  telnet
+42/tcp    open  nameserver
+53/tcp    open  domain
+80/tcp    open  http
+135/tcp   open  msrpc
+443/tcp   open  https
+1433/tcp  open  ms-sql-s
+1723/tcp  open  pptp
+3306/tcp  open  mysql
+5060/tcp  open  sip
+11211/tcp open  memcache
+27017/tcp open  mongod
+
+Nmap done: 1 IP address (1 host up) scanned in 5.30 seconds
+ + -- --=[Port 80 opened... running tests...
+====================================================================================
+ CHECKING FOR WAF 
+====================================================================================
+
+                                 ^     ^
+        _   __  _   ____ _   __  _    _   ____
+       ///7/ /.' \ / __////7/ /,' \ ,' \ / __/
+      | V V // o // _/ | V V // 0 // 0 // _/
+      |_n_,'/_n_//_/   |_n_,' \_,' \_,'/_/
+                                <
+                                ...'
+
+    WAFW00F - Web Application Firewall Detection Tool
+
+    By Sandro Gauci && Wendel G. Henrique
+
+Checking http://35.226.222.200
+The site http://35.226.222.200 is behind a Imperva SecureSphere
+Number of requests: 9
+====================================================================================
+ GATHERING HTTP INFO 
+====================================================================================
+http://35.226.222.200 [200 OK] Country[UNITED STATES][US], IP[35.226.222.200]
+====================================================================================
+ GATHERING SERVER INFO 
+====================================================================================
+
+wig - WebApp Information Gatherer
+
+
+Scanning http://35.226.222.200...
+_________________ SITE INFO __________________
+IP              Title                         
+35.226.222.200                              
+                                              
+__________________ VERSION ___________________
+Name            Versions   Type               
+                                              
+______________________________________________
+Time: 13.6 sec  Urls: 599  Fingerprints: 40401
+====================================================================================
+ CHECKING HTTP HEADERS AND METHODS 
+====================================================================================
+HTTP/1.0 200 OK
+Connection: close
+Content-Length: 38
+
+====================================================================================
+ RUNNING PASSIVE WEB SPIDER 
+====================================================================================
+null
+====================================================================================
+ RUNNING ACTIVE WEB SPIDER 
+====================================================================================
+
+
+                _.._
+              .'    '.
+             /   __   \ 
+          ,  |   ><   |  ,
+         . \  \      /  / .
+          \_'--`(  )'--'_/
+            .--'/()'--.
+     1N3   /  /` '' `\  \ 
+             |        |
+              \      /
+
+
+ + -- --=[https://crowdshield.com
+ + -- --=[blackwidow v1.0
+
+
+==================================================================================================
+http://35.226.222.200
+==================================================================================================
+__________________________________________________________________________________________________
+
+
+                _.._
+              .'    '.
+             /   __   \ 
+          ,  |   ><   |  ,
+         . \  \      /  / .
+          \_'--`(  )'--'_/
+            .--'/()'--.
+     1N3   /  /` '' `\  \ 
+             |        |
+              \      /
+
+
+ + -- --=[https://crowdshield.com
+ + -- --=[blackwidow v1.0
+
+[+] URL's Discovered: 
+/usr/share/blackwidow/35.226.222.200_80/35.226.222.200_80-urls-sorted.txt
+__________________________________________________________________________________________________
+
+[+] Dynamic URL's Discovered: 
+/usr/share/blackwidow/35.226.222.200_80/35.226.222.200_80-dynamic-sorted.txt
+__________________________________________________________________________________________________
+
+[+] Form URL's Discovered: 
+/usr/share/blackwidow/35.226.222.200_80/35.226.222.200_80-forms-sorted.txt
+__________________________________________________________________________________________________
+
+[+] Unique Dynamic Parameters Discovered: 
+/usr/share/blackwidow/35.226.222.200_80/35.226.222.200_80-dynamic-unique.txt
+__________________________________________________________________________________________________
+
+[+] Sub-domains Discovered: 
+/usr/share/blackwidow/35.226.222.200_80/35.226.222.200_80-subdomains-sorted.txt
+__________________________________________________________________________________________________
+
+[+] Emails Discovered: 
+/usr/share/blackwidow/35.226.222.200_80/35.226.222.200_80-emails-sorted.txt
+__________________________________________________________________________________________________
+
+[+] Phones Discovered: 
+/usr/share/blackwidow/35.226.222.200_80/35.226.222.200_80-phones-sorted.txt
+__________________________________________________________________________________________________
+
+[+] Loot Saved To: 
+/usr/share/blackwidow/35.226.222.200_80/
+__________________________________________________________________________________________________
+
+ HACK THE PLANET!!!!!
+**************************************************************************************************
+If you haven't already, please donate to this project using the addresses below.
+This will help fascilitate improved features and ongoing support.
+
+[+] BTC 1Fav36btfmdrYpCAR65XjKHhxuJJwFyKum
+[+] ETH 0x20bB09273702eaBDFbEE9809473Fd04b969a794d
+[+] LTC LQ6mPewec3xeLBYMdRP4yzeta6b9urqs2f
+[+] XMR 4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbS3EN24xprAQ1Z5Sy5s
+[+] ZCASH t1fsizsk2cqqJAjRoUmXJSyoVa9utYucXt7
+
+1N3@CrowdShield
+https://crowdshield.com
+**************************************************************************************************
+====================================================================================
+ RUNNING FILE/DIRECTORY BRUTE FORCE 
+====================================================================================
+
+ _|. _ _  _  _  _ _|_    v0.3.8
+(_||| _) (/_(_|| (_| )
+
+Extensions: php, asp, aspx, bak, zip, tar.gz, html, htm | Threads: 10 | Wordlist size: 35
+
+Error Log: /usr/share/sniper/plugins/dirsearch/logs/errors-18-11-19_03-55-41.log
+
+Target: http://35.226.222.200
+
+[03:55:41] Starting: 
+2.86% - Last request to: index5.71% - Last request to: sitemap.xml8.57% - Last request to: index.asp11.43% - Last request to: index.php14.29% - Last request to: index.jsp17.14% - Last request to: index.htm[03:55:43] 200 -   38B  - /index.html
+22.86% - Last request to: index.aspx25.71% - Last request to: robots.txt28.57% - Last request to: cgi-bin31.43% - Last request to: .ssh34.29% - Last request to: .git37.14% - Last request to: phpMyAdmin51.43% - Last request to: .bashrc40.00% - Last request to: wordpress42.86% - Last request to: .svn54.29% - Last request to: phpmyadmin48.57% - Last request to: wp45.71% - Last request to: .env57.14% - Last request to: images60.00% - Last request to: scripts62.86% - Last request to: blog65.71% - Last request to: user68.57% - Last request to: uploads71.43% - Last request to: css74.29% - Last request to: home77.14% - Last request to: img80.00% - Last request to: upload82.86% - Last request to: api85.71% - Last request to: users88.57% - Last request to: Admin91.43% - Last request to: js94.29% - Last request to: admin97.14% - Last request to: portal100.00% - Last request to: data
+Task Completed
+200    38B   http://35.226.222.200:80/index.html
+====================================================================================
+ SAVING SCREENSHOTS 
+====================================================================================
+ + -- --=[Port 443 opened... running tests...
+====================================================================================
+ CHECKING FOR WAF 
+====================================================================================
+
+                                 ^     ^
+        _   __  _   ____ _   __  _    _   ____
+       ///7/ /.' \ / __////7/ /,' \ ,' \ / __/
+      | V V // o // _/ | V V // 0 // 0 // _/
+      |_n_,'/_n_//_/   |_n_,' \_,' \_,'/_/
+                                <
+                                ...'
+
+    WAFW00F - Web Application Firewall Detection Tool
+
+    By Sandro Gauci && Wendel G. Henrique
+
+Checking https://35.226.222.200
+The site https://35.226.222.200 is behind a Imperva SecureSphere
+Number of requests: 9
+====================================================================================
+ GATHERING HTTP INFO 
+====================================================================================
+https://35.226.222.200 [200 OK] Country[UNITED STATES][US], IP[35.226.222.200]
+====================================================================================
+ GATHERING SERVER INFO 
+====================================================================================
+
+wig - WebApp Information Gatherer
+
+
+====================================================================================
+ CHECKING HTTP HEADERS AND METHODS 
+====================================================================================
+====================================================================================
+ RUNNING PASSIVE WEB SPIDER 
+====================================================================================
+null
+====================================================================================
+ RUNNING ACTIVE WEB SPIDER 
+====================================================================================
+
+
+                _.._
+              .'    '.
+             /   __   \ 
+          ,  |   ><   |  ,
+         . \  \      /  / .
+          \_'--`(  )'--'_/
+            .--'/()'--.
+     1N3   /  /` '' `\  \ 
+             |        |
+              \      /
+
+
+ + -- --=[https://crowdshield.com
+ + -- --=[blackwidow v1.0
+
+
+==================================================================================================
+http://35.226.222.200
+==================================================================================================
+__________________________________________________________________________________________________
+
+
+                _.._
+              .'    '.
+             /   __   \ 
+          ,  |   ><   |  ,
+         . \  \      /  / .
+          \_'--`(  )'--'_/
+            .--'/()'--.
+     1N3   /  /` '' `\  \ 
+             |        |
+              \      /
+
+
+ + -- --=[https://crowdshield.com
+ + -- --=[blackwidow v1.0
+
+[+] URL's Discovered: 
+/usr/share/blackwidow/35.226.222.200_80/35.226.222.200_80-urls-sorted.txt
+__________________________________________________________________________________________________
+
+[+] Dynamic URL's Discovered: 
+/usr/share/blackwidow/35.226.222.200_80/35.226.222.200_80-dynamic-sorted.txt
+__________________________________________________________________________________________________
+
+[+] Form URL's Discovered: 
+/usr/share/blackwidow/35.226.222.200_80/35.226.222.200_80-forms-sorted.txt
+__________________________________________________________________________________________________
+
+[+] Unique Dynamic Parameters Discovered: 
+/usr/share/blackwidow/35.226.222.200_80/35.226.222.200_80-dynamic-unique.txt
+__________________________________________________________________________________________________
+
+[+] Sub-domains Discovered: 
+/usr/share/blackwidow/35.226.222.200_80/35.226.222.200_80-subdomains-sorted.txt
+__________________________________________________________________________________________________
+
+[+] Emails Discovered: 
+/usr/share/blackwidow/35.226.222.200_80/35.226.222.200_80-emails-sorted.txt
+__________________________________________________________________________________________________
+
+[+] Phones Discovered: 
+/usr/share/blackwidow/35.226.222.200_80/35.226.222.200_80-phones-sorted.txt
+__________________________________________________________________________________________________
+
+[+] Loot Saved To: 
+/usr/share/blackwidow/35.226.222.200_80/
+__________________________________________________________________________________________________
+
+ HACK THE PLANET!!!!!
+**************************************************************************************************
+If you haven't already, please donate to this project using the addresses below.
+This will help fascilitate improved features and ongoing support.
+
+[+] BTC 1Fav36btfmdrYpCAR65XjKHhxuJJwFyKum
+[+] ETH 0x20bB09273702eaBDFbEE9809473Fd04b969a794d
+[+] LTC LQ6mPewec3xeLBYMdRP4yzeta6b9urqs2f
+[+] XMR 4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbS3EN24xprAQ1Z5Sy5s
+[+] ZCASH t1fsizsk2cqqJAjRoUmXJSyoVa9utYucXt7
+
+1N3@CrowdShield
+https://crowdshield.com
+**************************************************************************************************
+====================================================================================
+ RUNNING FILE/DIRECTORY BRUTE FORCE 
+====================================================================================
+
+ _|. _ _  _  _  _ _|_    v0.3.8
+(_||| _) (/_(_|| (_| )
+
+Extensions: php, asp, aspx, bak, zip, tar.gz, html, htm | Threads: 10 | Wordlist size: 35
+
+Error Log: /usr/share/sniper/plugins/dirsearch/logs/errors-18-11-19_03-55-49.log
+
+Target: https://35.226.222.200
+
+[03:55:49] Starting: 
+2.86% - Last request to: robots.txt[03:55:52] 200 -   38B  - /index.html
+8.57% - Last request to: cgi-bin11.43% - Last request to: index.asp14.29% - Last request to: index.jsp17.14% - Last request to: sitemap.xml20.00% - Last request to: index.htm22.86% - Last request to: index25.71% - Last request to: index.aspx28.57% - Last request to: index.php31.43% - Last request to: phpmyadmin34.29% - Last request to: wordpress37.14% - Last request to: phpMyAdmin40.00% - Last request to: .env42.86% - Last request to: wp45.71% - Last request to: .git48.57% - Last request to: .svn51.43% - Last request to: .bashrc54.29% - Last request to: images57.14% - Last request to: .ssh60.00% - Last request to: img62.86% - Last request to: css65.71% - Last request to: home68.57% - Last request to: uploads71.43% - Last request to: upload74.29% - Last request to: api77.14% - Last request to: blog80.00% - Last request to: user82.86% - Last request to: scripts85.71% - Last request to: users88.57% - Last request to: Admin91.43% - Last request to: admin94.29% - Last request to: portal97.14% - Last request to: data100.00% - Last request to: js
+Task Completed
+200    38B   http://35.226.222.200:80/index.html
+200    38B   https://35.226.222.200:443/index.html
+====================================================================================
+ GATHERING SSL/TLS INFO 
+====================================================================================
+
+
+
+ AVAILABLE PLUGINS
+ -----------------
+
+  PluginSessionResumption
+  PluginCompression
+  PluginChromeSha1Deprecation
+  PluginSessionRenegotiation
+  PluginCertInfo
+  PluginOpenSSLCipherSuites
+  PluginHSTS
+  PluginHeartbleed
+
+
+
+ CHECKING HOST(S) AVAILABILITY
+ -----------------------------
+
+   35.226.222.200:443                  => 35.226.222.200:443
+
+
+
+ SCAN RESULTS FOR 35.226.222.200:443 - 35.226.222.200:443
+ --------------------------------------------------------
+
+  * Session Renegotiation:
+      Client-initiated Renegotiations:   VULNERABLE - Server honors client-initiated renegotiations
+      Secure Renegotiation:              OK - Supported
+
+  * Deflate Compression:
+      OK - Compression disabled          
+
+  * Certificate - Content:
+      SHA1 Fingerprint:                  80318b23d635b69836cd64d39e19591ca7f200e1
+      Common Name:                       Nepenthes Development Team
+      Issuer:                            Nepenthes Development Team
+      Serial Number:                     5BEFCD26
+      Not Before:                        Nov 17 08:11:19 2018 GMT
+      Not After:                         Nov 17 08:11:19 2019 GMT
+      Signature Algorithm:               md5WithRSAEncryption
+      Public Key Algorithm:              rsaEncryption
+      Key Size:                          2048 bit
+      Exponent:                          65537 (0x10001)
+
+  * Certificate - Trust:
+      Hostname Validation:               FAILED - Certificate does NOT match 35.226.222.200
+      Google CA Store (09/2015):         FAILED - Certificate is NOT Trusted: self signed certificate
+      Java 6 CA Store (Update 65):       FAILED - Certificate is NOT Trusted: self signed certificate
+      Microsoft CA Store (09/2015):      FAILED - Certificate is NOT Trusted: self signed certificate
+      Mozilla NSS CA Store (09/2015):    FAILED - Certificate is NOT Trusted: self signed certificate
+      Apple CA Store (OS X 10.10.5):     FAILED - Certificate is NOT Trusted: self signed certificate
+      Certificate Chain Received:        ['Nepenthes Development Team']
+
+  * Certificate - OCSP Stapling:
+      NOT SUPPORTED - Server did not send back an OCSP response.
+
+  * Session Resumption:
+      With Session IDs:                  NOT SUPPORTED (0 successful, 5 failed, 0 errors, 5 total attempts).
+      With TLS Session Tickets:          OK - Supported
+
+  * SSLV2 Cipher Suites:
+      Server rejected all cipher suites.
+
+  * TLSV1_2 Cipher Suites:
+      Preferred:                       
+                 DHE-RSA-AES256-GCM-SHA384     DH-1024 bits   256 bits      HTTP 200 OK                        
+      Accepted:                        
+                 DHE-RSA-CAMELLIA256-SHA       DH-1024 bits   256 bits      HTTP 200 OK                        
+                 DHE-RSA-AES256-SHA256         DH-1024 bits   256 bits      HTTP 200 OK                        
+                 DHE-RSA-AES256-SHA            DH-1024 bits   256 bits      HTTP 200 OK                        
+                 DHE-RSA-AES256-GCM-SHA384     DH-1024 bits   256 bits      HTTP 200 OK                        
+                 CAMELLIA256-SHA               -              256 bits      HTTP 200 OK                        
+                 AES256-SHA256                 -              256 bits      HTTP 200 OK                        
+                 AES256-SHA                    -              256 bits      HTTP 200 OK                        
+                 AES256-GCM-SHA384             -              256 bits      HTTP 200 OK                        
+                 DHE-RSA-SEED-SHA              DH-1024 bits   128 bits      HTTP 200 OK                        
+                 DHE-RSA-CAMELLIA128-SHA       DH-1024 bits   128 bits      HTTP 200 OK                        
+                 DHE-RSA-AES128-SHA256         DH-1024 bits   128 bits      HTTP 200 OK                        
+                 DHE-RSA-AES128-SHA            DH-1024 bits   128 bits      HTTP 200 OK                        
+                 DHE-RSA-AES128-GCM-SHA256     DH-1024 bits   128 bits      HTTP 200 OK                        
+                 SEED-SHA                      -              128 bits      HTTP 200 OK                        
+                 RC4-SHA                       -              128 bits      HTTP 200 OK                        
+                 RC4-MD5                       -              128 bits      HTTP 200 OK                        
+                 CAMELLIA128-SHA               -              128 bits      HTTP 200 OK                        
+                 AES128-SHA256                 -              128 bits      HTTP 200 OK                        
+                 AES128-SHA                    -              128 bits      HTTP 200 OK                        
+                 AES128-GCM-SHA256             -              128 bits      HTTP 200 OK                        
+                 EDH-RSA-DES-CBC3-SHA          DH-1024 bits   112 bits      HTTP 200 OK                        
+                 DES-CBC3-SHA                  -              112 bits      HTTP 200 OK                        
+                 EDH-RSA-DES-CBC-SHA           DH-1024 bits   56 bits       HTTP 200 OK                        
+                 DES-CBC-SHA                   -              56 bits       HTTP 200 OK                        
+
+  * TLSV1_1 Cipher Suites:
+      Preferred:                       
+                 DHE-RSA-AES256-SHA            DH-1024 bits   256 bits      HTTP 200 OK                        
+      Accepted:                        
+                 DHE-RSA-CAMELLIA256-SHA       DH-1024 bits   256 bits      HTTP 200 OK                        
+                 DHE-RSA-AES256-SHA            DH-1024 bits   256 bits      HTTP 200 OK                        
+                 CAMELLIA256-SHA               -              256 bits      HTTP 200 OK                        
+                 AES256-SHA                    -              256 bits      HTTP 200 OK                        
+                 DHE-RSA-SEED-SHA              DH-1024 bits   128 bits      HTTP 200 OK                        
+                 DHE-RSA-CAMELLIA128-SHA       DH-1024 bits   128 bits      HTTP 200 OK                        
+                 DHE-RSA-AES128-SHA            DH-1024 bits   128 bits      HTTP 200 OK                        
+                 SEED-SHA                      -              128 bits      HTTP 200 OK                        
+                 RC4-SHA                       -              128 bits      HTTP 200 OK                        
+                 RC4-MD5                       -              128 bits      HTTP 200 OK                        
+                 CAMELLIA128-SHA               -              128 bits      HTTP 200 OK                        
+                 AES128-SHA                    -              128 bits      HTTP 200 OK                        
+                 EDH-RSA-DES-CBC3-SHA          DH-1024 bits   112 bits      HTTP 200 OK                        
+                 DES-CBC3-SHA                  -              112 bits      HTTP 200 OK                        
+                 EDH-RSA-DES-CBC-SHA           DH-1024 bits   56 bits       HTTP 200 OK                        
+                 DES-CBC-SHA                   -              56 bits       HTTP 200 OK                        
+
+  * TLSV1 Cipher Suites:
+      Preferred:                       
+                 DHE-RSA-AES256-SHA            DH-1024 bits   256 bits      HTTP 200 OK                        
+      Accepted:                        
+                 DHE-RSA-CAMELLIA256-SHA       DH-1024 bits   256 bits      HTTP 200 OK                        
+                 DHE-RSA-AES256-SHA            DH-1024 bits   256 bits      HTTP 200 OK                        
+                 CAMELLIA256-SHA               -              256 bits      HTTP 200 OK                        
+                 AES256-SHA                    -              256 bits      HTTP 200 OK                        
+                 DHE-RSA-SEED-SHA              DH-1024 bits   128 bits      HTTP 200 OK                        
+                 DHE-RSA-CAMELLIA128-SHA       DH-1024 bits   128 bits      HTTP 200 OK                        
+                 DHE-RSA-AES128-SHA            DH-1024 bits   128 bits      HTTP 200 OK                        
+                 SEED-SHA                      -              128 bits      HTTP 200 OK                        
+                 RC4-SHA                       -              128 bits      HTTP 200 OK                        
+                 RC4-MD5                       -              128 bits      HTTP 200 OK                        
+                 CAMELLIA128-SHA               -              128 bits      HTTP 200 OK                        
+                 AES128-SHA                    -              128 bits      HTTP 200 OK                        
+                 EDH-RSA-DES-CBC3-SHA          DH-1024 bits   112 bits      HTTP 200 OK                        
+                 DES-CBC3-SHA                  -              112 bits      HTTP 200 OK                        
+                 EDH-RSA-DES-CBC-SHA           DH-1024 bits   56 bits       HTTP 200 OK                        
+                 DES-CBC-SHA                   -              56 bits       HTTP 200 OK                        
+
+  * SSLV3 Cipher Suites:
+      Preferred:                       
+                 DHE-RSA-AES256-SHA            DH-1024 bits   256 bits      HTTP 200 OK                        
+      Accepted:                        
+                 DHE-RSA-CAMELLIA256-SHA       DH-1024 bits   256 bits      HTTP 200 OK                        
+                 DHE-RSA-AES256-SHA            DH-1024 bits   256 bits      HTTP 200 OK                        
+                 CAMELLIA256-SHA               -              256 bits      HTTP 200 OK                        
+                 AES256-SHA                    -              256 bits      HTTP 200 OK                        
+                 DHE-RSA-SEED-SHA              DH-1024 bits   128 bits      HTTP 200 OK                        
+                 DHE-RSA-CAMELLIA128-SHA       DH-1024 bits   128 bits      HTTP 200 OK                        
+                 DHE-RSA-AES128-SHA            DH-1024 bits   128 bits      HTTP 200 OK                        
+                 SEED-SHA                      -              128 bits      HTTP 200 OK                        
+                 RC4-SHA                       -              128 bits      HTTP 200 OK                        
+                 RC4-MD5                       -              128 bits      HTTP 200 OK                        
+                 CAMELLIA128-SHA               -              128 bits      HTTP 200 OK                        
+                 AES128-SHA                    -              128 bits      HTTP 200 OK                        
+                 EDH-RSA-DES-CBC3-SHA          DH-1024 bits   112 bits      HTTP 200 OK                        
+                 DES-CBC3-SHA                  -              112 bits      HTTP 200 OK                        
+                 EDH-RSA-DES-CBC-SHA           DH-1024 bits   56 bits       HTTP 200 OK                        
+                 DES-CBC-SHA                   -              56 bits       HTTP 200 OK                        
+
+Unhandled exception when processing --heartbleed: 
+socket.timeout - timed out
+
+
+
+ SCAN COMPLETED IN 5.71 S
+ ------------------------
+Version: 1.11.12-static
+OpenSSL 1.0.2-chacha (1.0.2g-dev)
+
+Connected to 35.226.222.200
+
+Testing SSL server 35.226.222.200 on port 443 using SNI name 35.226.222.200
+
+  TLS Fallback SCSV:
+Server supports TLS Fallback SCSV
+
+  TLS renegotiation:
+Secure session renegotiation supported
+
+  TLS Compression:
+Compression disabled
+
+  Heartbleed:
+TLS 1.2 not vulnerable to heartbleed
+TLS 1.1 not vulnerable to heartbleed
+TLS 1.0 not vulnerable to heartbleed
+
+  Supported Server Cipher(s):
+Preferred TLSv1.2  256 bits  DHE-RSA-AES256-GCM-SHA384     DHE 1024 bits
+Accepted  TLSv1.2  256 bits  DHE-RSA-AES256-SHA256         DHE 1024 bits
+Accepted  TLSv1.2  256 bits  DHE-RSA-AES256-SHA            DHE 1024 bits
+Accepted  TLSv1.2  256 bits  DHE-RSA-CAMELLIA256-SHA       DHE 1024 bits
+Accepted  TLSv1.2  256 bits  AES256-GCM-SHA384            
+Accepted  TLSv1.2  256 bits  AES256-SHA256                
+Accepted  TLSv1.2  256 bits  AES256-SHA                   
+Accepted  TLSv1.2  256 bits  CAMELLIA256-SHA              
+Accepted  TLSv1.2  128 bits  DHE-RSA-AES128-GCM-SHA256     DHE 1024 bits
+Accepted  TLSv1.2  128 bits  DHE-RSA-AES128-SHA256         DHE 1024 bits
+Accepted  TLSv1.2  128 bits  DHE-RSA-AES128-SHA            DHE 1024 bits
+Accepted  TLSv1.2  128 bits  DHE-RSA-SEED-SHA              DHE 1024 bits
+Accepted  TLSv1.2  128 bits  DHE-RSA-CAMELLIA128-SHA       DHE 1024 bits
+Accepted  TLSv1.2  128 bits  AES128-GCM-SHA256            
+Accepted  TLSv1.2  128 bits  AES128-SHA256                
+Accepted  TLSv1.2  128 bits  AES128-SHA                   
+Accepted  TLSv1.2  128 bits  SEED-SHA                     
+Accepted  TLSv1.2  128 bits  CAMELLIA128-SHA              
+Accepted  TLSv1.2  128 bits  RC4-SHA                      
+Accepted  TLSv1.2  128 bits  RC4-MD5                      
+Accepted  TLSv1.2  112 bits  EDH-RSA-DES-CBC3-SHA          DHE 1024 bits
+Accepted  TLSv1.2  112 bits  DES-CBC3-SHA                 
+Accepted  TLSv1.2  56 bits   EDH-RSA-DES-CBC-SHA           DHE 1024 bits
+Accepted  TLSv1.2  56 bits   DES-CBC-SHA                  
+Preferred TLSv1.1  256 bits  DHE-RSA-AES256-SHA            DHE 1024 bits
+Accepted  TLSv1.1  256 bits  DHE-RSA-CAMELLIA256-SHA       DHE 1024 bits
+Accepted  TLSv1.1  256 bits  AES256-SHA                   
+Accepted  TLSv1.1  256 bits  CAMELLIA256-SHA              
+Accepted  TLSv1.1  128 bits  DHE-RSA-AES128-SHA            DHE 1024 bits
+Accepted  TLSv1.1  128 bits  DHE-RSA-SEED-SHA              DHE 1024 bits
+Accepted  TLSv1.1  128 bits  DHE-RSA-CAMELLIA128-SHA       DHE 1024 bits
+Accepted  TLSv1.1  128 bits  AES128-SHA                   
+Accepted  TLSv1.1  128 bits  SEED-SHA                     
+Accepted  TLSv1.1  128 bits  CAMELLIA128-SHA              
+Accepted  TLSv1.1  128 bits  RC4-SHA                      
+Accepted  TLSv1.1  128 bits  RC4-MD5                      
+Accepted  TLSv1.1  112 bits  EDH-RSA-DES-CBC3-SHA          DHE 1024 bits
+Accepted  TLSv1.1  112 bits  DES-CBC3-SHA                 
+Accepted  TLSv1.1  56 bits   EDH-RSA-DES-CBC-SHA           DHE 1024 bits
+Accepted  TLSv1.1  56 bits   DES-CBC-SHA                  
+Preferred TLSv1.0  256 bits  DHE-RSA-AES256-SHA            DHE 1024 bits
+Accepted  TLSv1.0  256 bits  DHE-RSA-CAMELLIA256-SHA       DHE 1024 bits
+Accepted  TLSv1.0  256 bits  AES256-SHA                   
+Accepted  TLSv1.0  256 bits  CAMELLIA256-SHA              
+Accepted  TLSv1.0  128 bits  DHE-RSA-AES128-SHA            DHE 1024 bits
+Accepted  TLSv1.0  128 bits  DHE-RSA-SEED-SHA              DHE 1024 bits
+Accepted  TLSv1.0  128 bits  DHE-RSA-CAMELLIA128-SHA       DHE 1024 bits
+Accepted  TLSv1.0  128 bits  AES128-SHA                   
+Accepted  TLSv1.0  128 bits  SEED-SHA                     
+Accepted  TLSv1.0  128 bits  CAMELLIA128-SHA              
+Accepted  TLSv1.0  128 bits  RC4-SHA                      
+Accepted  TLSv1.0  128 bits  RC4-MD5                      
+Accepted  TLSv1.0  112 bits  EDH-RSA-DES-CBC3-SHA          DHE 1024 bits
+Accepted  TLSv1.0  112 bits  DES-CBC3-SHA                 
+Accepted  TLSv1.0  56 bits   EDH-RSA-DES-CBC-SHA           DHE 1024 bits
+Accepted  TLSv1.0  56 bits   DES-CBC-SHA                  
+Preferred SSLv3    256 bits  DHE-RSA-AES256-SHA            DHE 1024 bits
+Accepted  SSLv3    256 bits  DHE-RSA-CAMELLIA256-SHA       DHE 1024 bits
+Accepted  SSLv3    256 bits  AES256-SHA                   
+Accepted  SSLv3    256 bits  CAMELLIA256-SHA              
+Accepted  SSLv3    128 bits  DHE-RSA-AES128-SHA            DHE 1024 bits
+Accepted  SSLv3    128 bits  DHE-RSA-SEED-SHA              DHE 1024 bits
+Accepted  SSLv3    128 bits  DHE-RSA-CAMELLIA128-SHA       DHE 1024 bits
+Accepted  SSLv3    128 bits  AES128-SHA                   
+Accepted  SSLv3    128 bits  SEED-SHA                     
+Accepted  SSLv3    128 bits  CAMELLIA128-SHA              
+Accepted  SSLv3    128 bits  RC4-SHA                      
+Accepted  SSLv3    128 bits  RC4-MD5                      
+Accepted  SSLv3    112 bits  EDH-RSA-DES-CBC3-SHA          DHE 1024 bits
+Accepted  SSLv3    112 bits  DES-CBC3-SHA                 
+Accepted  SSLv3    56 bits   EDH-RSA-DES-CBC-SHA           DHE 1024 bits
+Accepted  SSLv3    56 bits   DES-CBC-SHA                  
+
+  SSL Certificate:
+Signature Algorithm: md5WithRSAEncryption
+RSA Key Strength:    2048
+
+Subject:  Nepenthes Development Team
+Issuer:   Nepenthes Development Team
+
+Not valid before: Nov 17 08:11:19 2018 GMT
+Not valid after:  Nov 17 08:11:19 2019 GMT
+====================================================================================
+ SAVING SCREENSHOTS 
+====================================================================================
+[+] Screenshot saved to /usr/share/sniper/loot/35.226.222.200/screenshots/35.226.222.200-port443.jpg
+====================================================================================
+ SCAN COMPLETE! 
+====================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                ____               
+    _________  /  _/___  ___  _____
+   / ___/ __ \ / // __ \/ _ \/ ___/
+  (__  ) / / // // /_/ /  __/ /    
+ /____/_/ /_/___/ .___/\___/_/     
+               /_/                 
+
+[*] Opening loot directory /usr/share/sniper/loot/35.226.222.200 [OK]
+ + -- --=[Current reports...
+ + -- --=[Generating reports...
